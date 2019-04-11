@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>andy reagan</title>
+    <meta charset="utf-8" />
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+
+
+    <meta name="tags" contents="keygen" />
+    <meta name="tags" contents="no password" />
+    <meta name="tags" contents="no passwords" />
+    <meta name="tags" contents="password" />
+    <meta name="tags" contents="rsync" />
+    <meta name="tags" contents="ssh" />
+    <meta name="tags" contents="ssh-copy-id" />
+    <meta name="tags" contents="ssh-keygen" />
+
+    <link rel="stylesheet" type="text/css" href="/theme/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/beemuse.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/base.css">
+    <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/default.min.css"> -->
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script> -->
+  </head>
+  <body>
+
+    <section id="navbar">
+	  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	    <div class="container">
+              <div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="/index.html">andyreagan.com</a>
+              </div>
+              <div class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+		  <li ><a href="/pages/blog.html">Blog</a></li>
+		  <li ><a href="/pages/about-me.html">About</a></li>
+		  <li ><a href="/pages/cv.html">CV</a></li>
+		  <li ><a href="/pages/publications.html">Publications</a></li>
+		  <li ><a href="/pages/teaching.html">Teaching</a></li>
+		  <li ><a href="/pages/visualizations.html">Visualizations</a></li>
+		</ul>
+              </div><!--/.nav-collapse -->
+	    </div>
+	  </div>
+    </section>
+
+    <br>
+<section class="content">
+  <div class="row">
+    
+    <div class="col-xs-12 col-md-8  col-md-offset-2 col-lg-6 col-lg-offset-3">
+      <div class="paper">
+  <header>
+    <h2 class="entry-title">
+      <a href="/2013/04/22/making-computers-talk-via-ssh-keys/" rel="bookmark"
+         title="Permalink to Making computers talk (via ssh keys)">Making computers talk (via ssh keys)</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <abbr class="published" title="2013-04-22T10:29:00+02:00">
+      Mon 22 April 2013
+    </abbr>
+  </footer><!-- /.post-info -->
+  <br>
+  <div class="entry-content">
+    <p>So you're tired of typing in passwords every time you ssh to a remote
+computer. Or you want scripts that login and do things (or rsync, etc).
+There is a better way. Use ssh keys.</p>
+<p>On the local machine, do this only once:</p>
+<p>[code language="bash"]<br>
+ssh-keygen<br>
+[/code]</p>
+<p>And then for each machine you want to ssh into (do this on your local
+machine as well):</p>
+<p>[code language="bash"]<br>
+cat \~/.ssh/id_rsa.pub | ssh user@machine "mkdir \~/.ssh; cat >>
+\~/.ssh/authorized_keys"<br>
+[/code]</p>
+<p>The above may complain that the directory already existed, but it will
+work regardless. On some machines there is a built-in "copy-ssh-id" but
+I like the above because you can see what it's doing.</p>
+<p>That's it, you're done. Things to note: only "ssh-keygen" once on a
+machine, and you can run the second command as many times as you like
+(to connect your local computer to lots of servers).</p>
+<p>Final bit of good-ness: if don't even want to type out "ssh
+user@machine" every time, try this on for size (this would make the
+command "MACHINE" ssh onto user@machine):</p>
+<p>[code language="bash"]<br>
+echo "alias MACHINE=\"ssh user@machine\"" >> \~/.bash_profile<br>
+[/code]</p>
+<p>Cheers.</p>
+  </div><!-- /.entry-content -->
+      </div>
+      </div>      
+ </section><!-- /#content -->
+
+    <footer id="slidingfooter" class="body">
+      Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>. Site design by Andy Reagan.
+    </footer><!-- /#contentinfo -->
+  </body>
+</script>
+</html>

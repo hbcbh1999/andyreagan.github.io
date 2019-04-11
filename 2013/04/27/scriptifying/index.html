@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>andy reagan</title>
+    <meta charset="utf-8" />
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+
+
+    <meta name="tags" contents="alias" />
+    <meta name="tags" contents="aliasing" />
+    <meta name="tags" contents="bash" />
+    <meta name="tags" contents="bash alias" />
+    <meta name="tags" contents="command-m" />
+    <meta name="tags" contents="dos2unix" />
+    <meta name="tags" contents="grad school" />
+    <meta name="tags" contents="mac" />
+    <meta name="tags" contents="osx" />
+    <meta name="tags" contents="perl" />
+    <meta name="tags" contents="scriptifying" />
+    <meta name="tags" contents="scripting" />
+
+    <link rel="stylesheet" type="text/css" href="/theme/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/beemuse.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/base.css">
+    <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/default.min.css"> -->
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script> -->
+  </head>
+  <body>
+
+    <section id="navbar">
+	  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	    <div class="container">
+              <div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="/index.html">andyreagan.com</a>
+              </div>
+              <div class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+		  <li ><a href="/pages/blog.html">Blog</a></li>
+		  <li ><a href="/pages/about-me.html">About</a></li>
+		  <li ><a href="/pages/cv.html">CV</a></li>
+		  <li ><a href="/pages/publications.html">Publications</a></li>
+		  <li ><a href="/pages/teaching.html">Teaching</a></li>
+		  <li ><a href="/pages/visualizations.html">Visualizations</a></li>
+		</ul>
+              </div><!--/.nav-collapse -->
+	    </div>
+	  </div>
+    </section>
+
+    <br>
+<section class="content">
+  <div class="row">
+    
+    <div class="col-xs-12 col-md-8  col-md-offset-2 col-lg-6 col-lg-offset-3">
+      <div class="paper">
+  <header>
+    <h2 class="entry-title">
+      <a href="/2013/04/27/scriptifying/" rel="bookmark"
+         title="Permalink to Scriptifying">Scriptifying</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <abbr class="published" title="2013-04-27T07:33:00+02:00">
+      Sat 27 April 2013
+    </abbr>
+  </footer><!-- /.post-info -->
+  <br>
+  <div class="entry-content">
+    <p>I bet you've been wondering where grad students spend their time. You
+would think they're in their offices in the basement, the library, or
+the coffee shop. But you'd be wrong, grad students spend their time at
+the command line.</p>
+<p>If you don't know where that is, you can imagine Mouse hacking the
+matrix, and probably stop reading.</p>
+<p>Given that we spend so much time there, here a few scripts that can make
+your life better. Perl comes with MAC OSX, so these guys should run
+right away on OSX, or any unix machine.</p>
+<h3>Making aliases</h3>
+<p>If you type something a lot (or just more than once), it can help to
+make a shortcut (alias) for that.  This perl scripts makes them for you:</p>
+<p>[code language="perl"]<br>
+#!/usr/bin/perl</p>
+<p>if (\$#ARGV != 1){<br>
+print "bad arguments, need at least 2\n";<br>
+exit;<br>
+}</p>
+<p>`echo \"alias \$ARGV[0]=\\\"\$ARGV[1]\\\"\" >>
+\~/.bash_profile`;</p>
+<p>print "made alias for \$ARGV[0]\n";<br>
+[/code]</p>
+<p>To get this to work, we're going to use it to make it's own alias!!
+Download it and put in it /Users/yourusername/bin, make it executable
+with</p>
+<p>[code language="bash"]<br>
+chmod +x \~/bin/makealias<br>
+[/code]</p>
+<p>Now run it, to make itself an alias. First, this will look like</p>
+<p>[code language="bash"]<br>
+\~/bin/makealias makealias \~/bin/makealias<br>
+[/code]</p>
+<p>which is a little bit weird. Now make any alias you want (in a new
+shell) with</p>
+<p>[code language="bash"]<br>
+makealias foo bar<br>
+[/code]</p>
+<p>or more usefully</p>
+<p>[code language="bash"]<br>
+makealias mroe more<br>
+[/code]</p>
+<p>which will execute more whenever you type mroe!</p>
+<h3>Cleaning up files</h3>
+<p>Sometimes when you download files, or *shudder* edited them on a
+windows computer, there are Command-M characters at the end of each
+line. Put this little guy (thanks to <a href="http://schmeits.wordpress.com/" title="Davy Schmeits">Davy
+Schmeits</a>) in your bin
+directory and make it an alias</p>
+<p>[code language="perl"]<br>
+#!/usr/bin/perl</p>
+<p>if (\$#ARGV != 1){<br>
+print "bad arguments, need at least 2\n";<br>
+exit;<br>
+}</p>
+<p>`cat \$ARGV[0] | col -b \$ARGV[1]`;</p>
+<p>print "thank me later\n"<br>
+[/code]</p>
+<p>Remove the last line if you're so inclined. To make this run, all we
+need to do now is use makealias:</p>
+<p>[code language="bash"]<br>
+chmod +x \~/bin/dos2unix; makealias dos2unix \~/bin/dos2unix<br>
+[/code]</p>
+<h3>Archiving</h3>
+<p>This bit of wisdom thanks to <a href="http://www.uvm.edu/~pdodds/">Peter Dodds</a>.
+Back up the tex and pdf of your work using this script. The default is
+the local directory, and you can pass it any directory to back up.</p>
+<p>[code language="perl"]<br>
+#!/usr/bin/perl</p>
+<p>(\$day,\$month,\$year) = (localtime)[3,4,5];<br>
+\$year = \$year + 1900;<br>
+\$month = \$month+1;<br>
+if (\$month \&lt; 10) {<br>
+\$month = "0\$month";<br>
+}<br>
+if (\$day \&lt; 10) {<br>
+\$day = "0\$day";<br>
+}</p>
+<p>if (\$#ARGV == 0){<br>
+`cd \$ARGV[0]\; mkdir archive/\$year-\$month-\$day\; cp -v *.pdf
+*.tex *.bib archive/\$year-\$month-\$day/`;<br>
+}<br>
+else{<br>
+`mkdir archive/\$year-\$month-\$day\; cp -v *.pdf *.tex *.bib
+archive/\$year-\$month-\$day/`;<br>
+}<br>
+[/code]</p>
+  </div><!-- /.entry-content -->
+      </div>
+      </div>      
+ </section><!-- /#content -->
+
+    <footer id="slidingfooter" class="body">
+      Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>. Site design by Andy Reagan.
+    </footer><!-- /#contentinfo -->
+  </body>
+</script>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>andy reagan</title>
+    <meta charset="utf-8" />
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="/theme/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/beemuse.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/base.css">
+    <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/default.min.css"> -->
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script> -->
+  </head>
+  <body>
+
+    <section id="navbar">
+	  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	    <div class="container">
+              <div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="/index.html">andyreagan.com</a>
+              </div>
+              <div class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+		  <li ><a href="/pages/blog.html">Blog</a></li>
+		  <li ><a href="/pages/about-me.html">About</a></li>
+		  <li ><a href="/pages/cv.html">CV</a></li>
+		  <li ><a href="/pages/publications.html">Publications</a></li>
+		  <li ><a href="/pages/teaching.html">Teaching</a></li>
+		  <li ><a href="/pages/visualizations.html">Visualizations</a></li>
+		</ul>
+              </div><!--/.nav-collapse -->
+	    </div>
+	  </div>
+    </section>
+
+    <br>
+<section class="content">
+  <div class="row">
+    
+    <div class="col-xs-12 col-md-8  col-md-offset-2 col-lg-6 col-lg-offset-3">
+      <div class="paper">
+  <header>
+    <h2 class="entry-title">
+      <a href="/2013/03/21/making-videos-in-matlab/" rel="bookmark"
+         title="Permalink to Making videos in MATLAB">Making videos in MATLAB</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <abbr class="published" title="2013-03-21T16:45:00+01:00">
+      Thu 21 March 2013
+    </abbr>
+  </footer><!-- /.post-info -->
+  <br>
+  <div class="entry-content">
+    <p>I've been writing a lot of code lately, and snippets of wisdom on the
+web have proved very useful to me. Here's a first attempt at
+contributing.</p>
+<p>Without explanation (the comments should help), here's an example movie
+made in MATLAB:</p>
+<p>[code language="matlab"]<br>
+% plot connected distribution at any time t</p>
+<p>clear all</p>
+<p>% load data in format i,tree,yield<br>
+load N1000n1000D1.csv</p>
+<p>max_yeild = max(N1000n1000D1(:,1)-N1000n1000D1(:,3));<br>
+max_yeild_loc =
+find(N1000n1000D1(:,1)-N1000n1000D1(:,3)==max_yeild,1);</p>
+<p>sizes = zeros(1,length(N1000n1000D1(:,1)));</p>
+<p>% initialize and open video writer<br>
+writerObj = VideoWriter('test.avi');<br>
+open(writerObj);</p>
+<p>figure('Renderer','zbuffer');</p>
+<p>axis tight;<br>
+set(gca,'NextPlot','replaceChildren');</p>
+<p>tmpfigh = gcf;<br>
+clf;<br>
+figshape(1000,500);</p>
+<p>% looping over my data for the movie<br>
+for t=4:4:length(sizes)-4</p>
+<p>% working with my data a bit<br>
+for i=1:length(N1000n1000D1(:,2))<br>
+sizes(i)=length(find(N1000n1000D1(1:t,2)==i));<br>
+end</p>
+<p>% num_connected(i) = number of components of length i<br>
+num_connected = zeros(1,length(N1000n1000D1(:,1)));</p>
+<p>j=0;<br>
+i=0;<br>
+while (i \&lt; 1000)<br>
+i=i+1;<br>
+if sizes(i) == 1<br>
+connected=1;<br>
+else<br>
+connected=0;<br>
+end<br>
+len_connected = 0;<br>
+while (connected == 1) &amp;&amp; (i \&lt; 1000)<br>
+len_connected = len_connected + 1;<br>
+i=i+1;<br>
+if sizes(i) == 1<br>
+connected=1;<br>
+else<br>
+connected=0;<br>
+end<br>
+end<br>
+if len_connected<br>
+j=j+1;<br>
+num_connected(j)=len_connected;<br>
+%num_connected(len_connected)=num_connected(len_connected)+1;<br>
+end<br>
+end<br>
+subplot(1,2,1)<br>
+% plot red when near the maximum yield<br>
+if t > max_yeild-5 &amp;&amp; t \&lt; max_yield+5<br>
+fig1 =
+plot(1:find(num_connected==0,1)-1,sort(num_connected(1:find(num_connected==0,1)-1),'descend'),'r.');<br>
+else<br>
+fig1 =
+plot(1:find(num_connected==0,1)-1,sort(num_connected(1:find(num_connected==0,1)-1),'descend'),'b.');<br>
+end</p>
+<p>xlim([1 250])<br>
+ylim([0 100])<br>
+xlabel('Size of connected component')<br>
+ylabel('Number of connected components')<br>
+title('D=1 Connected Component Distribution')</p>
+<p>subplot(1,2,2)<br>
+plot(N1000n1000D1(:,1),N1000n1000D1(:,1)-N1000n1000D1(:,3),'b.');<br>
+xlim([1 1000]);<br>
+hold on;<br>
+plot([t+4 t+4],[0 1000],'r-')<br>
+hold off;<br>
+xlabel('Timestep')<br>
+ylabel('Yield')<br>
+title('D=1 Yeild Curve')</p>
+<p>% write out the video<br>
+frame = getframe(gcf);<br>
+writeVideo(writerObj,frame);</p>
+<p>end</p>
+<p>close(writerObj);<br>
+[/code]</p>
+<p>If this helped, please let me know in the comments. Cheers.</p>
+<p>Here is the output: https://vimeo.com/62371566</p>
+  </div><!-- /.entry-content -->
+      </div>
+      </div>      
+ </section><!-- /#content -->
+
+    <footer id="slidingfooter" class="body">
+      Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>. Site design by Andy Reagan.
+    </footer><!-- /#contentinfo -->
+  </body>
+</script>
+</html>
