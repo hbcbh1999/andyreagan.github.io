@@ -141,15 +141,15 @@ For memory:&lt;/p&gt;
 &lt;div id="two"&gt;&lt;/div&gt;
 
 &lt;script type="text/javascript"&gt;
-  var spec = "https://gist.githubusercontent.com/andyreagan/488042d212f6ca0c4d44ab3a8116e15a/raw/902202d47c057a4bd30a05dd23a29f0e409aeffd/totaltime.vg.json";
+  var spec = "https://gist.githubusercontent.com/andyreagan/488042d212f6ca0c4d44ab3a8116e15a/raw/a4dc6513a09512f024fb360085c12fe1c18c2311/totaltime.vg.json";
   vegaEmbed('#one', spec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
-  var spec = "https://gist.githubusercontent.com/andyreagan/488042d212f6ca0c4d44ab3a8116e15a/raw/902202d47c057a4bd30a05dd23a29f0e409aeffd/memory.vg.json";
+  var spec = "https://gist.githubusercontent.com/andyreagan/488042d212f6ca0c4d44ab3a8116e15a/raw/a4dc6513a09512f024fb360085c12fe1c18c2311/memory.vg.json";
   vegaEmbed('#two', spec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
-  var spec = "https://gist.githubusercontent.com/andyreagan/488042d212f6ca0c4d44ab3a8116e15a/raw/1b6080c94620b41e2e3b72bce726a15171475f5f/chunksize.vg.json";
+  var spec = "https://gist.githubusercontent.com/andyreagan/488042d212f6ca0c4d44ab3a8116e15a/raw/a4dc6513a09512f024fb360085c12fe1c18c2311/chunksize.vg.json";
   vegaEmbed('#three', spec).then(function(result) {
     // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
   }).catch(console.error);
