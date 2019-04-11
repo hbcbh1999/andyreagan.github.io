@@ -1,0 +1,74 @@
+Title: Publications
+
+This page loads from the Vermont Complex System Center's database, and I can take the blame for the good chance that it doesn't load correctly.
+You can also see my work on [Google Scholar](https://scholar.google.com/citations?user=R2rheH4AAAAJ&hl=en).
+
+{/files/static-publications.markdown}
+
+<div id="paperlist"></div>
+<script type="text/javascript" src="/theme/js/plate.min.js"></script>
+<script type="text/javascript" src="/theme/js/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="/theme/js/moment.js"></script>
+<script>
+var paper_list_template_all_unstyled = new plate.Template(
+        '<div class="paperlist">' +
+        '{% for my_paper in papers %}' +
+        '{% if my_paper.year > 1950 %}' +
+        '  <div class="paper-small">' +
+        '    <div class="paper-small-inner">' +
+        '      <div class="img"><a href="{{ my_paper.titlelink }}" target="_blank"><img src="https://www.vermontcomplexsystems.org{{ my_paper.image }}"/></a></div>' +
+        '       <div class="title"><strong>{{ forloop.revcounter }}. {{ my_paper.title }}</strong></div>' +
+        '        <p>{{ my_paper.author_list }}' +
+        '        ({{ my_paper.year}}). {{ my_paper.journal }}.</p>' +
+        '            <a href="https://www.vermontcomplexsystems.org/bibgen/{{ my_paper.id }}" target="_blank">Cite (bibtex)</a>' +
+        '            {% if my_paper.arxivlink|length > 0 %} | <a href="{{ my_paper.arxivlink }}" target="_blank">arXiv link</a>{% endif %}' +
+        '            {% if my_paper.journalpagelink|length > 0 %} | <a href="{{ my_paper.journalpagelink }}" target="_blank">Journal link</a>{% endif %}' +
+        '            {% if my_paper.supplementarylink|length > 0 %} | <a href="{{ my_paper.supplementarylink }}" target="_blank">Supplementary link</a>{% endif %}' +
+        '            {% if my_paper.onlineappendices|length > 0 %} | <a href="{{ my_paper.onlineappendices }}" target="_blank">Online Appendices</a>{% endif %}' +
+        '    </div> <!-- .paper-small-inner -->' +
+        '  </div> <!-- .paper-small -->' +
+        '{% endif %}' +
+        '{% endfor %}' +
+        '</div> <!-- .paperlist -->' +
+        '');
+
+var all_papers_page = function(divid,template) {
+    // pass in your username from cmplxsys database
+    // and the div where you want the rendered press list to be put
+    // console.log("https://www.vermontcomplexsystems.org/api/v1/person/?format=json&uname="+username);
+    $.getJSON("https://www.vermontcomplexsystems.org/api/v1/person/?format=json&uname=andyreagan", function( data ) {
+	result = data.objects[0];
+
+        console.log(result);
+        // console.log(result.press_projects);
+
+        for (var i=0; i<result.papers.length; i++) {
+            result.papers[i].year = parseInt(result.papers[i].year);
+            result.papers[i].author_list = "";
+            for (var j=0; j<result.papers[i].author.length; j++) {
+                result.papers[i].author_list = result.papers[i].author_list+result.papers[i].author[j].fullname;
+                if (j<result.papers[i].author.length-1) {
+                    result.papers[i].author_list = result.papers[i].author_list+", ";
+                }
+            }
+        }
+
+        console.log(result);
+
+    // loop through and format the dates in the result
+	template.render(result, function(err, data) {
+	    // in this case, we want to be noisy if we fail.
+	    if(err) throw err;
+
+            console.log(data);
+
+	    // note that `data` will just be a plain string.
+	    // it's handy to wrap it with jQuery on the way out.
+	    var html = $(data);
+            // console.log(html);
+	    $(divid).append(html);
+	});
+    });
+}
+all_papers_page("#paperlist",paper_list_template_all_unstyled);
+</script>
