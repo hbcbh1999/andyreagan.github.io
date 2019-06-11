@@ -1,7 +1,7 @@
 Title: About Me
 
 As you may well have guessed, my name is Andy Reagan.
-I'm a father to one Olson Reagan and a Senior Data Scientist in MassMutual's [Data Science Program](https://datascience.massmutual.com/).
+I'm a father to one Olson Reagan, one Abel Reagan, and a Senior Data Scientist in MassMutual's [Data Science Program](https://datascience.massmutual.com/).
 I am based in Amherst, MA,
 where I lead projects focused on Marketing and Sales
 and serve as a mentor to members of the Data Science Development Program.
