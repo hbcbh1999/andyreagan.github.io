@@ -101,7 +101,7 @@ For good measure (i.e., if you copied with the root user) make sure it's owned b
 
 
 <p>Grab a coffee.</p>
-<p>Still as root,</p>
+<p>Switch to <code>dbadmin</code> user and do:</p>
 <div class="highlight"><pre><span></span>cd /home/dbadmin/Python-3.5.1
 ./configure
 make
@@ -132,8 +132,16 @@ CREATE FUNCTION myfunction AS NAME &#39;myfunction_factory&#39; LIBRARY mylib;
 </pre></div>
 
 
+<p>If you run into permissions issues having done all of the Python stuff as <code>root</code>,
+you can get the function to build by opening up the virtual environment permissions
+using these commands (as <code>root</code> in <code>/home/dbadmin</code>):</p>
+<div class="highlight"><pre><span></span>find pyenv -type f -exec chmod 666 {} \;
+find . -type d -exec chmod 777 {} \;
+</pre></div>
+
+
 <p>Cheers!
-I could build the python3 and package that in a Docker,
+I could build the python3 and package that into a Docker based off the original,
 but that would be less fun for you.</p>
   </div><!-- /.entry-content -->
       </div>

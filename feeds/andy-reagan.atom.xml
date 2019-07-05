@@ -42,7 +42,7 @@ For good measure (i.e., if you copied with the root user) make sure it's owned b
 
 
 &lt;p&gt;Grab a coffee.&lt;/p&gt;
-&lt;p&gt;Still as root,&lt;/p&gt;
+&lt;p&gt;Switch to &lt;code&gt;dbadmin&lt;/code&gt; user and do:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cd /home/dbadmin/Python-3.5.1
 ./configure
 make
@@ -73,8 +73,16 @@ CREATE FUNCTION myfunction AS NAME &amp;#39;myfunction_factory&amp;#39; LIBRARY 
 &lt;/pre&gt;&lt;/div&gt;
 
 
+&lt;p&gt;If you run into permissions issues having done all of the Python stuff as &lt;code&gt;root&lt;/code&gt;,
+you can get the function to build by opening up the virtual environment permissions
+using these commands (as &lt;code&gt;root&lt;/code&gt; in &lt;code&gt;/home/dbadmin&lt;/code&gt;):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;find pyenv -type f -exec chmod 666 {} \;
+find . -type d -exec chmod 777 {} \;
+&lt;/pre&gt;&lt;/div&gt;
+
+
 &lt;p&gt;Cheers!
-I could build the python3 and package that in a Docker,
+I could build the python3 and package that into a Docker based off the original,
 but that would be less fun for you.&lt;/p&gt;</content></entry><entry><title>Wisdom</title><link href="/2019/07/01/wisdom/" rel="alternate"></link><published>2019-07-01T00:00:00+02:00</published><updated>2019-07-01T00:00:00+02:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-07-01:/2019/07/01/wisdom/</id><summary type="html">&lt;p&gt;This month I turn 30 years old and what a wild ride it has been!
 I am very grateful for everyone who has been with me for my journey,
 and am hopeful of many adventures to come.&lt;/p&gt;</summary><content type="html">&lt;p&gt;This month I turn 30 years old and what a wild ride it has been!
