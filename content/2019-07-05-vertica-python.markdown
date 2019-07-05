@@ -49,7 +49,7 @@ yum install openssl-devel bzip2-devel expat-devel gdbm-devel readline-devel sqli
 
 Grab a coffee.
 
-Still as root,
+Switch to `dbadmin` user and do:
 
 ```
 cd /home/dbadmin/Python-3.5.1
@@ -86,6 +86,15 @@ CREATE LIBRARY mylib AS :libfile DEPENDS '/home/dbadmin/pyenv/lib/python3.5/site
 CREATE FUNCTION myfunction AS NAME 'myfunction_factory' LIBRARY mylib;
 ```
 
+If you run into permissions issues having done all of the Python stuff as `root`,
+you can get the function to build by opening up the virtual environment permissions
+using these commands (as `root` in `/home/dbadmin`):
+
+```
+find pyenv -type f -exec chmod 666 {} \;
+find . -type d -exec chmod 777 {} \;
+```
+
 Cheers!
-I could build the python3 and package that in a Docker,
+I could build the python3 and package that into a Docker based off the original,
 but that would be less fun for you.
