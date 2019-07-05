@@ -7,6 +7,8 @@ and we can easily extend functionality now by building in Python functions.
 This is great and all,
 so here I'll focus on setting up a development environment for building a simple UDx.
 
+The [documentation from Vertica](https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ExtendingVertica/UDx/DevEnvironment.htm) is not super specific, so this may help!
+
 For the local setup, we'll be using https://github.com/jbfavre/docker-vertica/.
 I'm going to focus on the CentOS version, since it is most similar to Amazon's RHEL images.
 To get started (on OSX, you need the Docker client first):
@@ -85,3 +87,5 @@ CREATE FUNCTION myfunction AS NAME 'myfunction_factory' LIBRARY mylib;
 ```
 
 Cheers!
+I could build the python3 and package that in a Docker,
+but that would be less fun for you.
