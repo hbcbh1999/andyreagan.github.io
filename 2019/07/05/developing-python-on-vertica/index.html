@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+      <title>andy reagan</title>
+    <meta charset="utf-8" />
+    <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+
+
+
+    <link rel="stylesheet" type="text/css" href="/theme/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/beemuse.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/theme/css/base.css">
+    <!-- <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/styles/default.min.css"> -->
+    <!-- <script src="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.2/highlight.min.js"></script> -->
+  </head>
+  <body>
+
+    <section id="navbar">
+	  <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	    <div class="container">
+              <div class="navbar-header">
+		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+		  <span class="sr-only">Toggle navigation</span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		  <span class="icon-bar"></span>
+		</button>
+		<a class="navbar-brand" href="/index.html">andyreagan.com</a>
+              </div>
+              <div class="collapse navbar-collapse">
+		<ul class="nav navbar-nav">
+		  <li ><a href="/pages/blog.html">Blog</a></li>
+		  <li ><a href="/pages/about-me.html">About</a></li>
+		  <li ><a href="/pages/cv.html">CV</a></li>
+		  <li ><a href="/pages/publications.html">Publications</a></li>
+		  <li ><a href="/pages/teaching.html">Teaching</a></li>
+		  <li ><a href="/pages/visualizations.html">Visualizations</a></li>
+		</ul>
+              </div><!--/.nav-collapse -->
+	    </div>
+	  </div>
+    </section>
+
+    <br>
+<section class="content">
+  <div class="row">
+    
+    <div class="col-xs-12 col-md-8  col-md-offset-2 col-lg-6 col-lg-offset-3">
+      <div class="paper">
+  <header>
+    <h2 class="entry-title">
+      <a href="/2019/07/05/developing-python-on-vertica/" rel="bookmark"
+         title="Permalink to Developing Python on Vertica">Developing Python on Vertica</a></h2>
+ 
+  </header>
+  <footer class="post-info">
+    <abbr class="published" title="2019-07-05T00:00:00+02:00">
+      Fri 05 July 2019
+    </abbr>
+  </footer><!-- /.post-info -->
+  <br>
+  <div class="entry-content">
+    <p>Vertica is a very powerful analytics database,
+and we can easily extend functionality now by building in Python functions.
+This is great and all,
+so here I'll focus on setting up a development environment for building a simple UDx.</p>
+<p>The <a href="https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ExtendingVertica/UDx/DevEnvironment.htm">documentation from Vertica</a> is not super specific, so this may help!</p>
+<p>For the local setup, we'll be using https://github.com/jbfavre/docker-vertica/.
+I'm going to focus on the CentOS version, since it is most similar to Amazon's RHEL images.
+To get started (on OSX, you need the Docker client first):</p>
+<div class="highlight"><pre><span></span>docker pull jbfavre/vertica:9.2.0-7_centos-7
+</pre></div>
+
+
+<p>Also take a second to get <a href="https://www.python.org/downloads/release/python-351/">Python 3.5.1 here</a>.
+Those are the two steps that require the most bandwidth!</p>
+<p>Now, run that thing:</p>
+<div class="highlight"><pre><span></span>docker run -p 5433:5433 jbfavre/vertica:9.2.0-7_centos-7
+</pre></div>
+
+
+<p>Grab the name of the running container from <code>docker ps</code> command, and set it to <code>$DOCKER_NAME</code>, and copy in our Python source:</p>
+<div class="highlight"><pre><span></span>DOCKER_NAME=suspicious_chatelet
+docker cp Downloads/Python-3.5.1.tgz $DOCKER_NAME:/home/dbadmin/
+</pre></div>
+
+
+<p>Phew! We're done with the parts that are specific to a local setup.
+If you're working on a server somewhere, copy up the <code>Python-3.5.1.tgz</code>
+and put it at <code>/home/dbadmin/Python-3.5.1.tgz</code>.
+For good measure (i.e., if you copied with the root user) make sure it's owned by <code>dbadmin</code>:</p>
+<div class="highlight"><pre><span></span>chown dbadmin /home/dbadmin/Python-3.5.1.tgz
+</pre></div>
+
+
+<p>As root, do</p>
+<div class="highlight"><pre><span></span>yum install openssl-devel bzip2-devel expat-devel gdbm-devel readline-devel sqlite-devel
+</pre></div>
+
+
+<p>Grab a coffee.</p>
+<p>Still as root,</p>
+<div class="highlight"><pre><span></span>cd /home/dbadmin/Python-3.5.1
+./configure
+make
+make install
+</pre></div>
+
+
+<p>Probably another coffee for that one!</p>
+<p>If you run the above as <code>dbadmin</code>, which you should, skip the <code>make install</code> line.
+Or only do that last line as <code>root</code>.</p>
+<p>Maybe still as root, though again this should be fine (and preferable) as dbadmin user in the <code>/home/dbadmin</code> directory. If you used root for anything above other than <code>make install</code>, you might need to keep <code>root</code> user active. Here goes:</p>
+<div class="highlight"><pre><span></span>Python-3.5.1/python -m venv pyenv
+pyenv/bin/pip install -U pip
+pyenv/bin/pip install requirements.txt
+</pre></div>
+
+
+<p>If you're within a firewall, you might need <code>--index-url=[your company's artifactory]</code> for the pip install lines.
+What is the <code>requirements.txt</code> line? All of the packages that your function needs,
+just like the requirements file from any python package.</p>
+<p>Finally you should be able to execute the SQL needed to build your function!
+Put your code in <code>myfunction.py</code> and then you can run <code>vsql</code> as dbadmin, and do:</p>
+<div class="highlight"><pre><span></span>\set libfile &#39;\&#39;&#39;`pwd`&#39;/myfunction.py\&#39;&#39;
+DROP LIBRARY mylib CASCADE;
+
+CREATE LIBRARY mylib AS :libfile DEPENDS &#39;/home/dbadmin/pyenv/lib/python3.5/site-packages/&#39; LANGUAGE &#39;Python&#39;;
+CREATE FUNCTION myfunction AS NAME &#39;myfunction_factory&#39; LIBRARY mylib;
+</pre></div>
+
+
+<p>Cheers!
+I could build the python3 and package that in a Docker,
+but that would be less fun for you.</p>
+  </div><!-- /.entry-content -->
+      </div>
+      </div>      
+ </section><!-- /#content -->
+
+    <footer id="slidingfooter" class="body">
+      Proudly powered by <a href="http://getpelican.com/">Pelican</a>, which takes great advantage of <a href="http://python.org">Python</a>. Site design by Andy Reagan.
+    </footer><!-- /#contentinfo -->
+  </body>
+</script>
+</html>

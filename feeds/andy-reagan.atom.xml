@@ -1,5 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>andy reagan - Andy Reagan</title><link href="/" rel="alternate"></link><link href="/feeds/andy-reagan.atom.xml" rel="self"></link><id>/</id><updated>2019-04-22T00:00:00+02:00</updated><entry><title>Welcome Abel Francis</title><link href="/2019/04/22/welcome-abel-francis/" rel="alternate"></link><published>2019-04-22T00:00:00+02:00</published><updated>2019-04-22T00:00:00+02:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-04-22:/2019/04/22/welcome-abel-francis/</id><summary type="html">&lt;p&gt;Abel Francis was born in the afternoon of April 22nd, 2019, at nearly nine pounds!&lt;/p&gt;
+<feed xmlns="http://www.w3.org/2005/Atom"><title>andy reagan - Andy Reagan</title><link href="/" rel="alternate"></link><link href="/feeds/andy-reagan.atom.xml" rel="self"></link><id>/</id><updated>2019-07-05T00:00:00+02:00</updated><entry><title>Developing Python on Vertica</title><link href="/2019/07/05/developing-python-on-vertica/" rel="alternate"></link><published>2019-07-05T00:00:00+02:00</published><updated>2019-07-05T00:00:00+02:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-07-05:/2019/07/05/developing-python-on-vertica/</id><summary type="html">&lt;p&gt;Vertica is a very powerful analytics database,
+and we can easily extend functionality now by building in Python functions.
+This is great and all,
+so here I'll focus on setting up a development environment for building a simple UDx.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ExtendingVertica/UDx/DevEnvironment.htm"&gt;documentation from Vertica&lt;/a&gt; is not super specific, so this may …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Vertica is a very powerful analytics database,
+and we can easily extend functionality now by building in Python functions.
+This is great and all,
+so here I'll focus on setting up a development environment for building a simple UDx.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ExtendingVertica/UDx/DevEnvironment.htm"&gt;documentation from Vertica&lt;/a&gt; is not super specific, so this may help!&lt;/p&gt;
+&lt;p&gt;For the local setup, we'll be using https://github.com/jbfavre/docker-vertica/.
+I'm going to focus on the CentOS version, since it is most similar to Amazon's RHEL images.
+To get started (on OSX, you need the Docker client first):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;docker pull jbfavre/vertica:9.2.0-7_centos-7
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Also take a second to get &lt;a href="https://www.python.org/downloads/release/python-351/"&gt;Python 3.5.1 here&lt;/a&gt;.
+Those are the two steps that require the most bandwidth!&lt;/p&gt;
+&lt;p&gt;Now, run that thing:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;docker run -p 5433:5433 jbfavre/vertica:9.2.0-7_centos-7
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Grab the name of the running container from &lt;code&gt;docker ps&lt;/code&gt; command, and set it to &lt;code&gt;$DOCKER_NAME&lt;/code&gt;, and copy in our Python source:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;DOCKER_NAME=suspicious_chatelet
+docker cp Downloads/Python-3.5.1.tgz $DOCKER_NAME:/home/dbadmin/
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Phew! We're done with the parts that are specific to a local setup.
+If you're working on a server somewhere, copy up the &lt;code&gt;Python-3.5.1.tgz&lt;/code&gt;
+and put it at &lt;code&gt;/home/dbadmin/Python-3.5.1.tgz&lt;/code&gt;.
+For good measure (i.e., if you copied with the root user) make sure it's owned by &lt;code&gt;dbadmin&lt;/code&gt;:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;chown dbadmin /home/dbadmin/Python-3.5.1.tgz
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;As root, do&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;yum install openssl-devel bzip2-devel expat-devel gdbm-devel readline-devel sqlite-devel
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Grab a coffee.&lt;/p&gt;
+&lt;p&gt;Still as root,&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;cd /home/dbadmin/Python-3.5.1
+./configure
+make
+make install
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Probably another coffee for that one!&lt;/p&gt;
+&lt;p&gt;If you run the above as &lt;code&gt;dbadmin&lt;/code&gt;, which you should, skip the &lt;code&gt;make install&lt;/code&gt; line.
+Or only do that last line as &lt;code&gt;root&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Maybe still as root, though again this should be fine (and preferable) as dbadmin user in the &lt;code&gt;/home/dbadmin&lt;/code&gt; directory. If you used root for anything above other than &lt;code&gt;make install&lt;/code&gt;, you might need to keep &lt;code&gt;root&lt;/code&gt; user active. Here goes:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;Python-3.5.1/python -m venv pyenv
+pyenv/bin/pip install -U pip
+pyenv/bin/pip install requirements.txt
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;If you're within a firewall, you might need &lt;code&gt;--index-url=[your company's artifactory]&lt;/code&gt; for the pip install lines.
+What is the &lt;code&gt;requirements.txt&lt;/code&gt; line? All of the packages that your function needs,
+just like the requirements file from any python package.&lt;/p&gt;
+&lt;p&gt;Finally you should be able to execute the SQL needed to build your function!
+Put your code in &lt;code&gt;myfunction.py&lt;/code&gt; and then you can run &lt;code&gt;vsql&lt;/code&gt; as dbadmin, and do:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;\set libfile &amp;#39;\&amp;#39;&amp;#39;`pwd`&amp;#39;/myfunction.py\&amp;#39;&amp;#39;
+DROP LIBRARY mylib CASCADE;
+
+CREATE LIBRARY mylib AS :libfile DEPENDS &amp;#39;/home/dbadmin/pyenv/lib/python3.5/site-packages/&amp;#39; LANGUAGE &amp;#39;Python&amp;#39;;
+CREATE FUNCTION myfunction AS NAME &amp;#39;myfunction_factory&amp;#39; LIBRARY mylib;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Cheers!
+I could build the python3 and package that in a Docker,
+but that would be less fun for you.&lt;/p&gt;</content></entry><entry><title>Wisdom</title><link href="/2019/07/01/wisdom/" rel="alternate"></link><published>2019-07-01T00:00:00+02:00</published><updated>2019-07-01T00:00:00+02:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-07-01:/2019/07/01/wisdom/</id><summary type="html">&lt;p&gt;This month I turn 30 years old and what a wild ride it has been!
+I am very grateful for everyone who has been with me for my journey,
+and am hopeful of many adventures to come.&lt;/p&gt;</summary><content type="html">&lt;p&gt;This month I turn 30 years old and what a wild ride it has been!
+I am very grateful for everyone who has been with me for my journey,
+and am hopeful of many adventures to come.&lt;/p&gt;</content></entry><entry><title>Welcome Abel Francis</title><link href="/2019/04/22/welcome-abel-francis/" rel="alternate"></link><published>2019-04-22T00:00:00+02:00</published><updated>2019-04-22T00:00:00+02:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-04-22:/2019/04/22/welcome-abel-francis/</id><summary type="html">&lt;p&gt;Abel Francis was born in the afternoon of April 22nd, 2019, at nearly nine pounds!&lt;/p&gt;
 &lt;p&gt;Mom and baby are happy and healthy, here's the little man shortly after birth:&lt;/p&gt;
 &lt;p&gt;&lt;img src="/images/2019-abel/20190422_170854.jpg" class="img-responsive"&gt;&lt;/p&gt;
 &lt;p&gt;Olson loves his little brother, seen here at a little over a month old:&lt;/p&gt;

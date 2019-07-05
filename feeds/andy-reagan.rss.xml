@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<rss version="2.0"><channel><title>andy reagan - Andy Reagan</title><link>/</link><description></description><lastBuildDate>Mon, 22 Apr 2019 00:00:00 +0200</lastBuildDate><item><title>Welcome Abel Francis</title><link>/2019/04/22/welcome-abel-francis/</link><description>&lt;p&gt;Abel Francis was born in the afternoon of April 22nd, 2019, at nearly nine pounds!&lt;/p&gt;
+<rss version="2.0"><channel><title>andy reagan - Andy Reagan</title><link>/</link><description></description><lastBuildDate>Fri, 05 Jul 2019 00:00:00 +0200</lastBuildDate><item><title>Developing Python on Vertica</title><link>/2019/07/05/developing-python-on-vertica/</link><description>&lt;p&gt;Vertica is a very powerful analytics database,
+and we can easily extend functionality now by building in Python functions.
+This is great and all,
+so here I'll focus on setting up a development environment for building a simple UDx.&lt;/p&gt;
+&lt;p&gt;The &lt;a href="https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ExtendingVertica/UDx/DevEnvironment.htm"&gt;documentation from Vertica&lt;/a&gt; is not super specific, so this may …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andy Reagan</dc:creator><pubDate>Fri, 05 Jul 2019 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:None,2019-07-05:/2019/07/05/developing-python-on-vertica/</guid></item><item><title>Wisdom</title><link>/2019/07/01/wisdom/</link><description>&lt;p&gt;This month I turn 30 years old and what a wild ride it has been!
+I am very grateful for everyone who has been with me for my journey,
+and am hopeful of many adventures to come.&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andy Reagan</dc:creator><pubDate>Mon, 01 Jul 2019 00:00:00 +0200</pubDate><guid isPermaLink="false">tag:None,2019-07-01:/2019/07/01/wisdom/</guid></item><item><title>Welcome Abel Francis</title><link>/2019/04/22/welcome-abel-francis/</link><description>&lt;p&gt;Abel Francis was born in the afternoon of April 22nd, 2019, at nearly nine pounds!&lt;/p&gt;
 &lt;p&gt;Mom and baby are happy and healthy, here's the little man shortly after birth:&lt;/p&gt;
 &lt;p&gt;&lt;img src="/images/2019-abel/20190422_170854.jpg" class="img-responsive"&gt;&lt;/p&gt;
 &lt;p&gt;Olson loves his little brother, seen here at a little over a month old:&lt;/p&gt;
