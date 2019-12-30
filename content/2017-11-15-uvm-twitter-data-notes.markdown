@@ -1,6 +1,5 @@
-Title: Twitter data
+Title: UVM Twitter data notes
 Date: 2017-11-25
-Status: draft
 
 First, important dates:
 

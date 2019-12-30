@@ -1,6 +1,6 @@
 Title: Column level encryption on a Vertica Database
 Author: Andy Reagan
-Date: 2019-07-10
+Date: 2019-12-30
 Status: Draft
 
 Vertica is a very powerful analytics database,
