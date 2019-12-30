@@ -1,5 +1,12 @@
 Title: Teaching
 
+## Fall 2019 ##
+
+UC Berkeley Data Visualization and Communication (MIDS W209): [course homepage](https://learn.datascience.berkeley.edu)
+
+</div>
+<div class="paper">
+
 ## Fall 2018 ##
 
 Smith College Multiple Regression (SDS 291): [course homepage](/teaching/2018/09-SDS-291)
