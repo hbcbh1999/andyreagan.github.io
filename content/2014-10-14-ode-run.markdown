@@ -7,7 +7,7 @@ Leg 1:
 
 Leg 2:
 
-<img src="/images/odeexam.jpg" class="img-responsive">
+<img src="/images/2014-10-14-ode-run/odeexam.jpg" class="img-responsive">
 
 Leg 3:
 

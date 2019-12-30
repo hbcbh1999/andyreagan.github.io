@@ -100,9 +100,9 @@ Next, I'll see how close the the place is to the coordinates for that subset.
 
 So 6455 of the 6473 tweets that I tested (almost all) were inside the bounding box, with a mean distance of 52km from the centroid.
 
-![Distances]({filename}/images/distances.png)
+![Distances](/images/2017-11-15-uvm-twitter-data-notes/distances.png)
 
-![Log10]({filename}/images/distances-log10.png)
+![Log10](/images/2017-11-15-uvm-twitter-data-notes/distances-log10.png)
 
 What the distances from the centroid look like. (note: everything in kilometers)
 

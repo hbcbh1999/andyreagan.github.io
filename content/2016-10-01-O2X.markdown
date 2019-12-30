@@ -10,5 +10,6 @@ Perhaps the most fun part was the actual _racing_ that happened during the race:
 
 I'll definitely be back!
 Check out the Strava effort above for photos, here is my favorite:
-<img src="/images/2016-O2X-team.jpg" class="img-responsive">
+
+<img src="/images/2016-10-01-O2X/2016-O2X-team.jpg" class="img-responsive">
 
