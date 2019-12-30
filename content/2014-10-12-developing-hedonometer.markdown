@@ -1,8 +1,9 @@
 Title: Developing with hedonometer.org
 Date: 2014-10-02
-Status: Draft
 
-This is a draft.
+~This is a draft.~
+
+Edit: 2019-12-30 this _was_ a draft, I'm just going to publish it.
 
 Long story short, you'll need to clone the git repository on bitbucket (if you don't have a bitbucket account let me know and I'll move it to github, they're the same kind of thing).
 Then you can add a remote that is the linode, (you ssh keys are already in all of the new user accounts on the linode under which the apps run), change the code, and then push to the linode.
@@ -51,7 +52,7 @@ MySQL-python
 Oh, also, for the site to run locally, you need a local mysql server and to put the connection settings into your environment. Getting the mysql server running (installed with `brew install mysql`) was annoying at best, but then once you've got it running and created a database, my local environment settings are in a .env file in the repository:
 
 ```bash
-export DJ_SECRET_KEY=3\*qr\%3v27\!\)\_cfml\*uffm3n9glfdy\%16\!\#4wm5\@8t\)rc\@do\_z\^
+export DJ_SECRET_KEY=******
 export DJ_DEBUG=1
 export DJ_DB_ENGINE=django.db.backends.mysql
 export DJ_DB_NAME=testdb
