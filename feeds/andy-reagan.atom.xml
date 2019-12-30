@@ -1,5 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>andy reagan - Andy Reagan</title><link href="/" rel="alternate"></link><link href="/feeds/andy-reagan.atom.xml" rel="self"></link><id>/</id><updated>2019-07-05T00:00:00+02:00</updated><entry><title>Developing Python on Vertica</title><link href="/2019/07/05/developing-python-on-vertica/" rel="alternate"></link><published>2019-07-05T00:00:00+02:00</published><updated>2019-07-05T00:00:00+02:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-07-05:/2019/07/05/developing-python-on-vertica/</id><summary type="html">&lt;p&gt;Vertica is a very powerful analytics database,
+<feed xmlns="http://www.w3.org/2005/Atom"><title>andy reagan - Andy Reagan</title><link href="/" rel="alternate"></link><link href="/feeds/andy-reagan.atom.xml" rel="self"></link><id>/</id><updated>2019-11-01T00:00:00+01:00</updated><entry><title>2019 NYC Marathon</title><link href="/2019/11/01/2019-nyc-marathon/" rel="alternate"></link><published>2019-11-01T00:00:00+01:00</published><updated>2019-11-01T00:00:00+01:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-11-01:/2019/11/01/2019-nyc-marathon/</id><summary type="html">&lt;p&gt;Long story stort:
+I didn't run.&lt;/p&gt;
+&lt;p&gt;In the spirit of sharing both successes and failures,
+I overcommitted personally
+and opted to skip the run.
+Instead,
+I drove past NYC
+and spent the afternoon with my wife and kiddos.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Long story stort:
+I didn't run.&lt;/p&gt;
+&lt;p&gt;In the spirit of sharing both successes and failures,
+I overcommitted personally
+and opted to skip the run.
+Instead,
+I drove past NYC
+and spent the afternoon with my wife and kiddos.&lt;/p&gt;</content></entry><entry><title>Presque Isle Marathon</title><link href="/2019/09/08/presque-isle-marathon/" rel="alternate"></link><published>2019-09-08T00:00:00+02:00</published><updated>2019-09-08T00:00:00+02:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-09-08:/2019/09/08/presque-isle-marathon/</id><summary type="html">&lt;p&gt;PR Baby! Boston bound for 2020.&lt;/p&gt;
+&lt;iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/2691066468/embed/2e0692df9dc12cf1f22e8c6c538c26950a48ce70'&gt;&lt;/iframe&gt;</summary><content type="html">&lt;p&gt;PR Baby! Boston bound for 2020.&lt;/p&gt;
+&lt;iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/2691066468/embed/2e0692df9dc12cf1f22e8c6c538c26950a48ce70'&gt;&lt;/iframe&gt;</content></entry><entry><title>Mexico with the boys</title><link href="/2019/08/22/mexico-with-the-boys/" rel="alternate"></link><published>2019-08-22T00:00:00+02:00</published><updated>2019-08-22T00:00:00+02:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-08-22:/2019/08/22/mexico-with-the-boys/</id><summary type="html">&lt;p&gt;Hard to believe,
+but I snuck out of family responsibilities
+and went to Mexico for 5 days for a bachelor party!&lt;/p&gt;
+&lt;p&gt;A great time was had.&lt;/p&gt;</summary><content type="html">&lt;p&gt;Hard to believe,
+but I snuck out of family responsibilities
+and went to Mexico for 5 days for a bachelor party!&lt;/p&gt;
+&lt;p&gt;A great time was had.&lt;/p&gt;</content></entry><entry><title>Exploring the science behind the Yasso 800</title><link href="/2019/08/17/exploring-the-science-behind-the-yasso-800/" rel="alternate"></link><published>2019-08-17T00:00:00+02:00</published><updated>2019-08-17T00:00:00+02:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-08-17:/2019/08/17/exploring-the-science-behind-the-yasso-800/</id><summary type="html">&lt;p&gt;If you haven't heard of them,
+&lt;a href="https://www.runnersworld.com/race-training/the-real-history-of-the-yasso-800s"&gt;Yasso 800s&lt;/a&gt; comprise a infamous running workout that touts itself to predict your marathon time.
+The name was coined by Amby Burfoot,
+paying homage to Runner's World editor Bart Yasso.&lt;/p&gt;
+&lt;p&gt;While even Yasso himself has professed &lt;a href="https://www.runnersworld.com/runners-stories/a20810642/yasso-800s-make-no-sense/"&gt;he had no idea&lt;/a&gt; why the math worked …&lt;/p&gt;</summary><content type="html">&lt;p&gt;If you haven't heard of them,
+&lt;a href="https://www.runnersworld.com/race-training/the-real-history-of-the-yasso-800s"&gt;Yasso 800s&lt;/a&gt; comprise a infamous running workout that touts itself to predict your marathon time.
+The name was coined by Amby Burfoot,
+paying homage to Runner's World editor Bart Yasso.&lt;/p&gt;
+&lt;p&gt;While even Yasso himself has professed &lt;a href="https://www.runnersworld.com/runners-stories/a20810642/yasso-800s-make-no-sense/"&gt;he had no idea&lt;/a&gt; why the math worked,
+many others have remained stumped.
+No more!
+First,
+let's define the workout:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Run 10 800-meter intervals, with 2–3 minutes rest.&lt;/li&gt;
+&lt;li&gt;Take you average time for the intervals, replace the minutes with hours, the seconds with minutes, and that’s your marathon time!&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If you ran the repeats averaging 3:35 (minutes:seconds),
+that means you’re ready to run 3:35 (hours:minutes) in the marathon.
+Simple.&lt;/p&gt;
+&lt;p&gt;The trick here is also simple:
+you’re multiplying your time by 60,
+but the distance by only 52.4 (.5 miles to 26.2 miles),
+so the pace is slower.
+Note that you have done 10 repeats so the pace of the repeats themselves is closer to what you can run for 5 miles.
+Let your time for the repeats by t₁,
+and the time for the marathon t₂.
+Yasso says that t₂ = 60 ⋅ t₁.
+So in the same amount of time,
+you cover less distance.
+In doing so,
+we’re saying you pace will only be 52.4/60 = 87.3% of your pace on intervals,
+so you’re running 87.3% of the pace you can for about 5 miles.&lt;/p&gt;
+&lt;p&gt;That helped, right? Almost! Thanks to work done by &lt;a href="http://downloads.hindawi.com/journals/bmri/2018/8203062.pdf"&gt;academic&lt;/a&gt; &lt;a href="https://bmcsportsscimedrehabil.biomedcentral.com/articles/10.1186/s13102-016-0052-y"&gt;studies&lt;/a&gt;, we know that the pace/distance curve has another neat, mathematical property: it follows a power law. The power law curve is so-named because it resembles y = axᵇ , where x is raised to the b-th power.&lt;/p&gt;
+&lt;h2&gt;Let’s check this formula ourselves&lt;/h2&gt;
+&lt;p&gt;To understand this relationship, take a look at the record times at distances ranging from the 100 meters through the marathon. While no single athlete would be ready for events from the 100m through the marathon, we can consider the best times in event as a measure of what is possible. World record performances are here on &lt;a href="https://en.wikipedia.org/wiki/List_of_world_records_in_athletics#Men"&gt;Wikipedia&lt;/a&gt;, and we convert to CSV using &lt;a href="https://wikitable2csv.ggor.de/"&gt;this webpage&lt;/a&gt;. We end up with data like this:&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-08-17-yasso/1.png" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;To understand the data, we’ll start by making a plot of pace vs distance.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-08-17-yasso/2.png" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;While that curve doesn’t look special to most, to those familiar with &lt;a href="vermontcomplexsystems.org"&gt;Complex Systems&lt;/a&gt; see that it has the makings of a power law. As we mentioned, analysis has already been done to show that the a &lt;a href="wikipedia.org/power_law"&gt;power law&lt;/a&gt; model will fit this data, and let’s take a look for ourselves. The first thing we need to is plot this data in log-log space.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-08-17-yasso/3.png" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;Hey, it (sortof) looks like a straight line now! Now we can fit a simple regression line to the data, and that will give us the coefficients on the power law model. The regression in log space gives us a fit show on the next plot. I’ve excluded the points in red that are slower than longer events.&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-08-17-yasso/4.png" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;We found coefficients for pace = 17.85 ⋅ distance^(−0.1144).&lt;/p&gt;
+&lt;h2&gt;Now let’s check Yasso’s math.&lt;/h2&gt;
+&lt;p&gt;Earlier, we figured out that Yasso said marathon pace is 87% of your 800m pace (that you can repeat 10 times). As it turned out, that was the same as just multiplying the time by 60. For ourselves, we found a formula that gives us pace = 17.85 ⋅ distance^(−0.1144), based on the data, and that gives us a ratio of 82% from 5 miles to the marathon. So Yasso 800s are going to largely overestimate your pace for the marathon, if you’re running world record pace for both the 5mi and the marathon. If we compare our model to &lt;a href="http://downloads.hindawi.com/journals/bmri/2018/8203062.pdf"&gt;those fit on individual athletes&lt;/a&gt;, we do see that ours is “steeper”, such that it might be closer to 87% than 82%.&lt;/p&gt;
+&lt;p&gt;For fun, we can play around with these formulas to make new workouts! Next time you’re curious about your marathon potential,&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Go run 4 x mile.&lt;/li&gt;
+&lt;li&gt;Take your mile split in seconds, multiply by 0.5, and that’s your marathon time in minutes!†&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;I’ll let you decide what to call this workout.&lt;/p&gt;
+&lt;hr&gt;
+
+&lt;h2&gt;Footnotes&lt;/h2&gt;
+&lt;p&gt;† Based on the formula we found, it should really be .55!&lt;/p&gt;</content></entry><entry><title>Developing Python on Vertica</title><link href="/2019/07/05/developing-python-on-vertica/" rel="alternate"></link><published>2019-07-05T00:00:00+02:00</published><updated>2019-07-05T00:00:00+02:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-07-05:/2019/07/05/developing-python-on-vertica/</id><summary type="html">&lt;p&gt;Vertica is a very powerful analytics database,
 and we can easily extend functionality now by building in Python functions.
 This is great and all,
 so here I'll focus on setting up a development environment for building a simple UDx.&lt;/p&gt;
@@ -89,13 +166,13 @@ and am hopeful of many adventures to come.&lt;/p&gt;</summary><content type="htm
 I am very grateful for everyone who has been with me for my journey,
 and am hopeful of many adventures to come.&lt;/p&gt;</content></entry><entry><title>Welcome Abel Francis</title><link href="/2019/04/22/welcome-abel-francis/" rel="alternate"></link><published>2019-04-22T00:00:00+02:00</published><updated>2019-04-22T00:00:00+02:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-04-22:/2019/04/22/welcome-abel-francis/</id><summary type="html">&lt;p&gt;Abel Francis was born in the afternoon of April 22nd, 2019, at nearly nine pounds!&lt;/p&gt;
 &lt;p&gt;Mom and baby are happy and healthy, here's the little man shortly after birth:&lt;/p&gt;
-&lt;p&gt;&lt;img src="/images/2019-abel/20190422_170854.jpg" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-04-22-welcome-abel/20190422_170854.jpg" class="img-responsive"&gt;&lt;/p&gt;
 &lt;p&gt;Olson loves his little brother, seen here at a little over a month old:&lt;/p&gt;
-&lt;p&gt;&lt;img src="/images/2019-abel/20190527_191950.jpg" class="img-responsive"&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Abel Francis was born in the afternoon of April 22nd, 2019, at nearly nine pounds!&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-04-22-welcome-abel/20190527_191950.jpg" class="img-responsive"&gt;&lt;/p&gt;</summary><content type="html">&lt;p&gt;Abel Francis was born in the afternoon of April 22nd, 2019, at nearly nine pounds!&lt;/p&gt;
 &lt;p&gt;Mom and baby are happy and healthy, here's the little man shortly after birth:&lt;/p&gt;
-&lt;p&gt;&lt;img src="/images/2019-abel/20190422_170854.jpg" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-04-22-welcome-abel/20190422_170854.jpg" class="img-responsive"&gt;&lt;/p&gt;
 &lt;p&gt;Olson loves his little brother, seen here at a little over a month old:&lt;/p&gt;
-&lt;p&gt;&lt;img src="/images/2019-abel/20190527_191950.jpg" class="img-responsive"&gt;&lt;/p&gt;</content></entry><entry><title>Boston Marathon 2019</title><link href="/2019/04/15/boston-marathon-2019/" rel="alternate"></link><published>2019-04-15T00:00:00+02:00</published><updated>2019-04-15T00:00:00+02:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-04-15:/2019/04/15/boston-marathon-2019/</id><summary type="html">&lt;iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/2292189157/embed/4cb5a296f8edaa8b8c76b4bc15d7d91084a8c8fb'&gt;&lt;/iframe&gt;
+&lt;p&gt;&lt;img src="/images/2019-04-22-welcome-abel/20190527_191950.jpg" class="img-responsive"&gt;&lt;/p&gt;</content></entry><entry><title>Boston Marathon 2019</title><link href="/2019/04/15/boston-marathon-2019/" rel="alternate"></link><published>2019-04-15T00:00:00+02:00</published><updated>2019-04-15T00:00:00+02:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-04-15:/2019/04/15/boston-marathon-2019/</id><summary type="html">&lt;iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/2292189157/embed/4cb5a296f8edaa8b8c76b4bc15d7d91084a8c8fb'&gt;&lt;/iframe&gt;
 
 &lt;p&gt;What a day! Congrats to all the finishers.
 I count myself very grateful to be at the start line of this one,
@@ -114,20 +191,20 @@ with a lot of small surges.&lt;/p&gt;
 
 &lt;p&gt;&lt;script async src="//www.instagram.com/embed.js"&gt;&lt;/script&gt;&lt;/p&gt;
 &lt;p&gt;Race morning with Olson:&lt;/p&gt;
-&lt;p&gt;&lt;img src="/images/2019-boston/20190415_064516.jpg" class="img-responsive" style="transform: rotate(0deg);"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-04-15-boston-2019/20190415_064516.jpg" class="img-responsive" style="transform: rotate(0deg);"&gt;&lt;/p&gt;
 &lt;p&gt;Drop-off point, a 2 mile walk from the start was as close as my Mom could get me.&lt;/p&gt;
-&lt;p&gt;&lt;img src="/images/2019-boston/20190415_083851.jpg" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-04-15-boston-2019/20190415_083851.jpg" class="img-responsive"&gt;&lt;/p&gt;
 &lt;p&gt;Colby!
-&lt;img src="/images/2019-boston/20190415_092744.jpg" class="img-responsive"&gt;&lt;/p&gt;
+&lt;img src="/images/2019-04-15-boston-2019/20190415_092744.jpg" class="img-responsive"&gt;&lt;/p&gt;
 &lt;p&gt;Sufferage. Took a selfie to text to my wife at this point.&lt;/p&gt;
-&lt;p&gt;&lt;img src="/images/2019-boston/IMG_20190415_155935_102.jpg" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-04-15-boston-2019/IMG_20190415_155935_102.jpg" class="img-responsive"&gt;&lt;/p&gt;
 &lt;p&gt;More suffering.&lt;/p&gt;
-&lt;p&gt;&lt;img src="/images/2019-boston/Screenshot_20190418-110426_Chrome.jpg" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-04-15-boston-2019/Screenshot_20190418-110426_Chrome.jpg" class="img-responsive"&gt;&lt;/p&gt;
 &lt;p&gt;Running the final mile.&lt;/p&gt;
-&lt;p&gt;&lt;img src="/images/2019-boston/Screenshot_20190418-110415_Chrome.jpg" class="img-responsive"&gt;&lt;/p&gt;
-&lt;p&gt;&lt;img src="/images/2019-boston/Screenshot_20190426-203046_Chrome.jpg" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-04-15-boston-2019/Screenshot_20190418-110415_Chrome.jpg" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-04-15-boston-2019/Screenshot_20190426-203046_Chrome.jpg" class="img-responsive"&gt;&lt;/p&gt;
 &lt;p&gt;Done!&lt;/p&gt;
-&lt;p&gt;&lt;img src="/images/2019-boston/Screenshot_20190418-110503_Chrome.jpg" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-04-15-boston-2019/Screenshot_20190418-110503_Chrome.jpg" class="img-responsive"&gt;&lt;/p&gt;
 &lt;p&gt;Thanks for MarathonPhoto for the unscrupulously screengrabbed and watermarked pictures.&lt;/p&gt;</content></entry><entry><title>Scoring arbitrarily large datasets with Pandas + Sklearn</title><link href="/2019/04/10/scoring-arbitrarily-large-datasets-with-pandas-sklearn/" rel="alternate"></link><published>2019-04-10T00:00:00+02:00</published><updated>2019-04-10T00:00:00+02:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-04-10:/2019/04/10/scoring-arbitrarily-large-datasets-with-pandas-sklearn/</id><summary type="html">&lt;p&gt;The workhorses of data analysis and modeling in the &lt;a href="http://jakevdp.github.io/blog/2014/05/09/why-python-is-slow/"&gt;Python&lt;/a&gt; universe are undoubtedly &lt;a href="http://wesmckinney.com/blog/apache-arrow-pandas-internals/"&gt;Pandas&lt;/a&gt; and &lt;a href="https://jakevdp.github.io/PythonDataScienceHandbook/05.02-introducing-scikit-learn.html"&gt;Sklearn&lt;/a&gt;.
 I won't extoll their virtues here, but focus on solving one limiting problem.
 One of the major limitations of these libraries is the size of data they can handle.&lt;/p&gt;
@@ -481,10 +558,139 @@ I got really cold (as did very many) in that time,
 and remained cold outside for about two hours before getting a ride to a friend’s apartment to shower.
 Was maybe warmed back up by 4pm (3 hours after finishing).&lt;/p&gt;
 &lt;h2&gt;Recovery&lt;/h2&gt;
-&lt;p&gt;Happened slowly and was aided by an IPA-fueled afterparty at home.&lt;/p&gt;</content></entry><entry><title>Run rabbit run</title><link href="/2017/11/23/run-rabbit-run/" rel="alternate"></link><published>2017-11-23T00:00:00+01:00</published><updated>2017-11-23T00:00:00+01:00</updated><author><name>andy reagan</name></author><id>tag:None,2017-11-23:/2017/11/23/run-rabbit-run/</id><summary type="html">&lt;p&gt;A brief moment of glory:&lt;/p&gt;
-&lt;p&gt;&lt;img src="/files/2017-11-23andy-reagan-bunny-suit-turkey-trot-run-race.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;Happened slowly and was aided by an IPA-fueled afterparty at home.&lt;/p&gt;</content></entry><entry><title>UVM Twitter data notes</title><link href="/2017/11/25/uvm-twitter-data-notes/" rel="alternate"></link><published>2017-11-25T00:00:00+01:00</published><updated>2017-11-25T00:00:00+01:00</updated><author><name>andy reagan</name></author><id>tag:None,2017-11-25:/2017/11/25/uvm-twitter-data-notes/</id><summary type="html">&lt;p&gt;First, important dates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2008-09-11: We have the deca-hose from here, with a higher % of the tweets at the beginning and down to 10% now (with the total volume increasing greatly over that time). Geo is (was) roughly 1% of all tweets, first with a "coordinates" and then with the "places …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;First, important dates:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;2008-09-11: We have the deca-hose from here, with a higher % of the tweets at the beginning and down to 10% now (with the total volume increasing greatly over that time). Geo is (was) roughly 1% of all tweets, first with a "coordinates" and then with the "places" field.&lt;/li&gt;
+&lt;li&gt;2009-11-11: The first geo-tweet we have on the books is here: &lt;code&gt;gzip -cd zipped-raw/2009-11-11/2009-11-11-11-15.gz | less&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;2014-03-07-13-53: turned the spritzer to filter for geo tweets, pulling ~3000K per minute. Some small fraction of these didn't have a lat/lon, just had a "location”, this was about 10%. Around this time, there were ~850 geo tweets (lat/lon) per minute coming in from the gardenhose.&lt;/li&gt;
+&lt;li&gt;2014-04-14: twitter upgraded their backend and we starting getting 7-10K geo tweets per minute from the spritzer.&lt;/li&gt;
+&lt;li&gt;Unknown dates: There have been various outages of the geo spritzer over the past two years, but we have most of it, I think (why aren't we running 3 of them?)&lt;/li&gt;
+&lt;li&gt;Unknown date: At some point, the overall volume slowed back down to 3K/minute from the geo spritzer&lt;/li&gt;
+&lt;li&gt;2016-12-07: Data change from Gardenhose to GNIP decahose&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Other&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;There is a database living at UVM that Morgan built to store the geo tweets starting in 2011 in SQL...it got really big despite UVM saying they could handle it, I don’t know how to use this database&lt;ul&gt;
+&lt;li&gt;Morgan: This seems correct to me. SQL was a fine solution the first year we used it for the geotagged tweets, but appears to be woefully insufficient with the current magnitude of data. One reason for this is that SQL scales vertically (i.e. with faster machines) rather than horizontally (i.e. with parallelization). Hadoop is an example that benefits from horizontal scaling, but there are others. With a beautiful tool like the VACC already in place, it seems to me that horizontal scaling is a viable option.&lt;/li&gt;
+&lt;li&gt;SSH to bluemoon server&lt;/li&gt;
+&lt;li&gt;`mysql -u mrfrank -p -h webdb-large1.uvm.edu -e "use MRFRANK_2; INSERT SQL COMMANDS HERE!!!!!"``&lt;/li&gt;
+&lt;li&gt;you will need password, ask Morgan&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Jake build a geo database that pre-processed each tweet to place it in hierarchical boxes by country/state/county (us-analogy, these are more general) and accessed by the incredibly reliable &lt;code&gt;pullTweets.pl&lt;/code&gt; script (it's txt files for each minute stored in folders by location, all zipped up, that can be searched through without unzipping it to disk). With the decline in volume, I think that this stopped happening about a month ago, and the database isn't being updated (I could very well be wrong).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;FAQ&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Twitter says that if you pull two geo streams, they will be the same tweets (should we check? may be able to get more data by running two streams with different bounding boxes... also the speed of the scraper may matter (ruby chugger seems to be at least as fast as anything I could write in python)). how similar at the geo tweets from the spritzer and the gardenhose?&lt;ul&gt;
+&lt;li&gt;Jake: I did a few tests re: volumes and multiple streams/filters a little while back and am sorry to report that (1) two (spritzer) streams running simultaneously off of the same access key produce nearly identical data (I have not acutely quantified this, but just ran a quick diff---one or two tweets were different), and (2) two disjoint hemisphere streams collectively produce the same volume as one global stream.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;The new tweets are mostly "places" tweets, and lat/lon is going away. Probably related to some business decision by twitter to integrate with foursquare (which they have), but where does this leave us?&lt;/li&gt;
+&lt;li&gt;How reliable are the "places"? If there is also lat/lon in the tweet, do they generally agree?&lt;/li&gt;
+&lt;li&gt;Are there tweets with both lat/lon and “places” specified?&lt;ul&gt;
+&lt;li&gt;Yes, though it is a small fraction of the overall stream.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Do the tweets we’re currently collecting include the “places” specified tweets?&lt;ul&gt;
+&lt;li&gt;Yes.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Am I right in assuming that the spritzer has a filter set for locations?&lt;ul&gt;
+&lt;li&gt;Yes, it is the bounding box for the whole world.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;Other observations&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Jake: As long as 10% of all tweets are tagged with some form of location, then application of the same filter to the garden hose will not result in reduced volume there. Presumably we could estimate the current proportion of tweets tagged with location from the spritzer, but Twitter seems to be pretty tight-lipped about their sampling methods:
+https://twittercommunity.com/t/is-the-sample-streaming-api-truly-random/14942&lt;/li&gt;
+&lt;li&gt;Jake, Re accuracy: My assumption is that the 'places' are reasonably accurate. It appears that they default to a detected location (once enabled), and my guess would be that most folks don't spend too much time switching locations for each tweet. However, even if this data is good, there will forever be a new cohort of data doubters who fear duplicitous behavior.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If we find that the centroids for the "places" are close to the exact geo location, we can start using those for the pullTweets database.&lt;/p&gt;
+&lt;h2&gt;Analysis of "places" Tweets&lt;/h2&gt;
+&lt;p&gt;Okay so here are the most recent numbers. these are the fields that we're looking for:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;tweet[&amp;quot;coordinates&amp;quot;] (ref: https://dev.twitter.com/overview/api/tweets#obj-coordinates)
+tweet[&amp;quot;geo&amp;quot;] --- this was the old place for coordinates
+tweet[&amp;quot;place&amp;quot;] (ref: https://dev.twitter.com/overview/api/places)
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;I did a parse for:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;tweets that contain any of them: "any".&lt;/li&gt;
+&lt;li&gt;tweets that contain the coordinate field: "coordinates”;&lt;/li&gt;
+&lt;li&gt;tweets that contain only the coordinates field: "coordinates-only”.&lt;/li&gt;
+&lt;li&gt;tweets that contain only the places field: "place-only".&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Did this for both the spritzer and the main stream, here are the numbers from &lt;code&gt;wc&lt;/code&gt; (the first number is the count of Tweets):&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;2016-02-15-00-00-any.gz
+7815  305189 23191117
+
+2016-02-15-00-00-any-spritzer.gz
+43128 1679248 127526514
+
+2016-02-15-00-00-coordinates.gz
+1029   37231 2942433
+
+2016-02-15-00-00-coordinates-only.gz
+5     180   11608
+
+2016-02-15-00-00-coordinates-only-spritzer.gz
+30     773   69684
+
+2016-02-15-00-00-coordinates-spritzer.gz
+5655  207164 16125655
+
+2016-02-15-00-00-place-only.gz
+6786  267958 20248684
+
+2016-02-15-00-00-place-only-spritzer.gz
+37473 1472084 111400859
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Total in the spritzer is 46643 and total in the 10% feed is 398616.&lt;/p&gt;
+&lt;h3&gt;Observations&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;there are 3K tweets on the spritzer that have none of these? what's up with those?&lt;/li&gt;
+&lt;li&gt;VERY few (effectively none) have only the coordinates (likely folks using an out-of-date version of the Twitter app).&lt;/li&gt;
+&lt;li&gt;close to a 6X boost for all categories on the spritzer.&lt;/li&gt;
+&lt;li&gt;13% of the tweets with "place" also have "coordinates".&lt;/li&gt;
+&lt;li&gt;we're still getting the same number of coordinates tweets from the spritzer as total geo tweets (place or coords) from the 10% stream.&lt;/li&gt;
+&lt;li&gt;1.9% of tweets in the main stream have "any": we can then estimate that there are 78K total "any" tweets. we're only seeing 43K of these on the spritzer. so either we're still missing some (almost half) on the spritzer, or the 10%
+over-samples the geo.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;How good is the center of bounding boxes?&lt;/h3&gt;
+&lt;p&gt;Next, I'll see how close the the place is to the coordinates for that subset.&lt;/p&gt;
+&lt;p&gt;So 6455 of the 6473 tweets that I tested (almost all) were inside the bounding box, with a mean distance of 52km from the centroid.&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Distances" src="/images/2017-11-15-uvm-twitter-data-notes/distances.png"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img alt="Log10" src="/images/2017-11-15-uvm-twitter-data-notes/distances-log10.png"&gt;&lt;/p&gt;
+&lt;p&gt;What the distances from the centroid look like. (note: everything in kilometers)&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Tell me, what does “bounding box” mean in this context
+if the centroid is 52km from the tweet? Is it a county?&lt;ul&gt;
+&lt;li&gt;I think that these "places" are all sorts of things. Farrell Hall is one, so is the city of Burlington, so is the United States.
+Each place just comes with 4 points to describe it, and most of the points are within that bounding box.
+We &lt;em&gt;could&lt;/em&gt; query more details on the place from Twitter's API, which I think is a more detailed geo fence than the bounding box.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;More next steps&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Use data for a longer timeframe (this is only 15 minutes worth).&lt;/li&gt;
+&lt;li&gt;Look at the outlier tweets...&lt;/li&gt;
+&lt;li&gt;Bin by the size of the bounding box (a USA box is likely to have a tweet further from the centroid), maybe small bounding boxes are most useful for the location?&lt;/li&gt;
+&lt;li&gt;Cross reference the place database with the retail store locations (download their place database?).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Maybe these will be useful for specific projects, and we can test the tweet data as necessary.&lt;/p&gt;
+&lt;h3&gt;Final thoughts&lt;/h3&gt;
+&lt;p&gt;The statements that 13% of the tweets with "place" also have "coordinates" and 1.9% of tweets in the main stream have “any" indicate that the coordinate-tagged tweets alone now comprise a meager 0.2% of the stream in general (i.e., a drop from ~1%)?. Twitter made it harder to geo-locate with GPS when they integrated with FourSquare.&lt;/p&gt;
+&lt;p&gt;The policy decision by Twitter to allow for the soft 'place' location (and its adoption by users) has watered down the data that Twitter is collecting from its users!&lt;/p&gt;</content></entry><entry><title>Run rabbit run</title><link href="/2017/11/23/run-rabbit-run/" rel="alternate"></link><published>2017-11-23T00:00:00+01:00</published><updated>2017-11-23T00:00:00+01:00</updated><author><name>andy reagan</name></author><id>tag:None,2017-11-23:/2017/11/23/run-rabbit-run/</id><summary type="html">&lt;p&gt;A brief moment of glory:&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2017-11-23-trot/2017-11-23andy-reagan-bunny-suit-turkey-trot-run-race.gif" /&gt;&lt;/p&gt;
 &lt;iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/1287230193/embed/0adf742e35744a6eccfe46b5379ff22607bbf199'&gt;&lt;/iframe&gt;</summary><content type="html">&lt;p&gt;A brief moment of glory:&lt;/p&gt;
-&lt;p&gt;&lt;img src="/files/2017-11-23andy-reagan-bunny-suit-turkey-trot-run-race.gif" /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2017-11-23-trot/2017-11-23andy-reagan-bunny-suit-turkey-trot-run-race.gif" /&gt;&lt;/p&gt;
 &lt;iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='https://www.strava.com/activities/1287230193/embed/0adf742e35744a6eccfe46b5379ff22607bbf199'&gt;&lt;/iframe&gt;</content></entry><entry><title>Sentiment analysis methods for understanding large-scale texts: a case for using continuum-scored words and word shift graphs</title><link href="/2017/11/14/sentiment-analysis-methods-for-understanding-large-scale-texts-a-case-for-using-continuum-scored-words-and-word-shift-graphs/" rel="alternate"></link><published>2017-11-14T00:00:00+01:00</published><updated>2017-11-14T00:00:00+01:00</updated><author><name>andy reagan</name></author><id>tag:None,2017-11-14:/2017/11/14/sentiment-analysis-methods-for-understanding-large-scale-texts-a-case-for-using-continuum-scored-words-and-word-shift-graphs/</id><summary type="html">&lt;p&gt;As a grad student trying to understand the emotional content of some unreadably large collection of texts, a typical night in grad school can often go something like this: You’re up late at night planning a new research study, thinking about trying some of this fancy sentiment-based text analysis …&lt;/p&gt;</summary><content type="html">&lt;p&gt;As a grad student trying to understand the emotional content of some unreadably large collection of texts, a typical night in grad school can often go something like this: You’re up late at night planning a new research study, thinking about trying some of this fancy sentiment-based text analysis. You resort to your favorite search engine with the query “sentiment analysis package python.” We have all been there, except maybe with R instead of Python (the latter being my favorite).&lt;/p&gt;
 &lt;p&gt;Unfortunately, despite advances in our understanding of how to perform sentiment analysis in recent years, the first method off the shelf will rarely be the best choice. Making matters worse, it can be nearly impossible to navigate the immense literature on the topic.&lt;/p&gt;
 &lt;p&gt;Fortunately, we’ve figured out that there are only a few things that you need to know to get started using sentiment analysis.&lt;/p&gt;
@@ -655,7 +861,20 @@ Now, the tests:&lt;/p&gt;
 &lt;p&gt;Final note — there are still likely to be cases where the metadata is useful to spark, such as:
 1. Avoiding using a stringIndexer, which is quite a bit slower than the one-hot encoder.
 2. Providing the variable type to a classification method such as a Random Forest, which can take advantage of variable types.
-3. Doing a one-hot encoding where the full range of values is not included in the training set. You can pass the known full range in as metadata, and your pipeline will reflect this.&lt;/p&gt;</content></entry><entry><title>Modular papers with LaTeX</title><link href="/2017/03/23/modular-papers-with-latex/" rel="alternate"></link><published>2017-03-23T00:00:00+01:00</published><updated>2017-03-23T00:00:00+01:00</updated><author><name>andy reagan</name></author><id>tag:None,2017-03-23:/2017/03/23/modular-papers-with-latex/</id><summary type="html">&lt;p&gt;Earlier this week I wrote about how to &lt;a href="https://medium.com/@andyreagan/structuring-academic-project-directories-3d959684fba1#.xvmvhqz1y"&gt;structure an academic project directory&lt;/a&gt; and one of those directories was &lt;code&gt;paper&lt;/code&gt;. The project write-ups (read: papers) will live here. My tool of choice for writing is LaTeX. It is not for everyone, and since you’re this far I’m going …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Earlier this week I wrote about how to &lt;a href="https://medium.com/@andyreagan/structuring-academic-project-directories-3d959684fba1#.xvmvhqz1y"&gt;structure an academic project directory&lt;/a&gt; and one of those directories was &lt;code&gt;paper&lt;/code&gt;. The project write-ups (read: papers) will live here. My tool of choice for writing is LaTeX. It is not for everyone, and since you’re this far I’m going to assume that you’re already a fan!&lt;/p&gt;
+3. Doing a one-hot encoding where the full range of values is not included in the training set. You can pass the known full range in as metadata, and your pipeline will reflect this.&lt;/p&gt;</content></entry><entry><title>Spring 2017 Berekely DataViz Project Roundup</title><link href="/2017/04/28/spring-2017-berekely-dataviz-project-roundup/" rel="alternate"></link><published>2017-04-28T00:00:00+02:00</published><updated>2017-04-28T00:00:00+02:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2017-04-28:/2017/04/28/spring-2017-berekely-dataviz-project-roundup/</id><summary type="html">&lt;p&gt;Some really fantastic work from the teams in W209 this semester. Links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;https://rileyrustad.github.io/W209_Final/?demographic=Custom&lt;/li&gt;
+&lt;li&gt;https://sharmila-velamur.github.io/trumpworld/home.html&lt;/li&gt;
+&lt;li&gt;https://ramseynoj.github.io/history_of_refugee_migration/metrocosm/imigration-paths.html&lt;/li&gt;
+&lt;li&gt;http://people.ischool.berkeley.edu/~yhzhao/food_access.html#dashboard_2&lt;/li&gt;
+&lt;li&gt;http://people.ischool.berkeley.edu/~rthamman/W209_Project_Final …&lt;/li&gt;&lt;/ul&gt;</summary><content type="html">&lt;p&gt;Some really fantastic work from the teams in W209 this semester. Links:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;https://rileyrustad.github.io/W209_Final/?demographic=Custom&lt;/li&gt;
+&lt;li&gt;https://sharmila-velamur.github.io/trumpworld/home.html&lt;/li&gt;
+&lt;li&gt;https://ramseynoj.github.io/history_of_refugee_migration/metrocosm/imigration-paths.html&lt;/li&gt;
+&lt;li&gt;http://people.ischool.berkeley.edu/~yhzhao/food_access.html#dashboard_2&lt;/li&gt;
+&lt;li&gt;http://people.ischool.berkeley.edu/~rthamman/W209_Project_Final/Final.html&lt;/li&gt;
+&lt;/ul&gt;</content></entry><entry><title>Modular papers with LaTeX</title><link href="/2017/03/23/modular-papers-with-latex/" rel="alternate"></link><published>2017-03-23T00:00:00+01:00</published><updated>2017-03-23T00:00:00+01:00</updated><author><name>andy reagan</name></author><id>tag:None,2017-03-23:/2017/03/23/modular-papers-with-latex/</id><summary type="html">&lt;p&gt;Earlier this week I wrote about how to &lt;a href="https://medium.com/@andyreagan/structuring-academic-project-directories-3d959684fba1#.xvmvhqz1y"&gt;structure an academic project directory&lt;/a&gt; and one of those directories was &lt;code&gt;paper&lt;/code&gt;. The project write-ups (read: papers) will live here. My tool of choice for writing is LaTeX. It is not for everyone, and since you’re this far I’m going …&lt;/p&gt;</summary><content type="html">&lt;p&gt;Earlier this week I wrote about how to &lt;a href="https://medium.com/@andyreagan/structuring-academic-project-directories-3d959684fba1#.xvmvhqz1y"&gt;structure an academic project directory&lt;/a&gt; and one of those directories was &lt;code&gt;paper&lt;/code&gt;. The project write-ups (read: papers) will live here. My tool of choice for writing is LaTeX. It is not for everyone, and since you’re this far I’m going to assume that you’re already a fan!&lt;/p&gt;
 &lt;p&gt;While templates for many academic journals are available from &lt;a href="https://www.sharelatex.com/templates/journals/national-academy-of-sciences-%28pnas%29"&gt;ShareLaTeX&lt;/a&gt;, &lt;a href="https://www.overleaf.com/gallery/tagged/academic-journal"&gt;Overleaf&lt;/a&gt;, and often the journals themselves, they share a common problem: each template is a new file with the content copied into it. One of main reasons that we use LaTeX is the clean &lt;em&gt;separation of content and style&lt;/em&gt;, and having a new, single tex file for each journal violates this principle. We can overcome this by using multiple files for the content of our writing. To start, we can take a paper that has files looking like this:&lt;/p&gt;
 &lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;emotional-arcs-EPJ-template.tex
 bmc-mathphys.bst
@@ -838,11 +1057,11 @@ There is much more to do: Extracting and comparing plots, character paths, compa
 But all this now seems possible.&lt;/p&gt;</content></entry><entry><title>I'm Married!</title><link href="/2016/10/22/im-married/" rel="alternate"></link><published>2016-10-22T00:00:00+02:00</published><updated>2016-10-22T00:00:00+02:00</updated><author><name>andy reagan</name></author><id>tag:None,2016-10-22:/2016/10/22/im-married/</id><summary type="html">&lt;p&gt;I'm happy to report that as of October 22nd, 2016, I'm happily married to the lovely Samantha Spisiak (@sspis1).
 It was raining and in the 30's, in other words a perfect Vermont day, and here is one of my favorite pictures from the day:&lt;/p&gt;
 &lt;div class="col-md-8 col-md-offset-2"&gt;
-&lt;img src="/images/hitched.png" class="img-responsive"&gt;
+&lt;img src="/images/2016-10-22-hitched/hitched.png" class="img-responsive"&gt;
 &lt;/div&gt;</summary><content type="html">&lt;p&gt;I'm happy to report that as of October 22nd, 2016, I'm happily married to the lovely Samantha Spisiak (@sspis1).
 It was raining and in the 30's, in other words a perfect Vermont day, and here is one of my favorite pictures from the day:&lt;/p&gt;
 &lt;div class="col-md-8 col-md-offset-2"&gt;
-&lt;img src="/images/hitched.png" class="img-responsive"&gt;
+&lt;img src="/images/2016-10-22-hitched/hitched.png" class="img-responsive"&gt;
 &lt;/div&gt;</content></entry><entry><title>O2X Summit Challenge!</title><link href="/2016/10/01/o2x-summit-challenge/" rel="alternate"></link><published>2016-10-01T00:00:00+02:00</published><updated>2016-10-01T00:00:00+02:00</updated><author><name>andy reagan</name></author><id>tag:None,2016-10-01:/2016/10/01/o2x-summit-challenge/</id><summary type="html">&lt;p&gt;After grabbing a couple hours of sleep, I had an awesome time running the &lt;a href="https://o2x.com/summit-challenge/"&gt;O2X Summit Challenge&lt;/a&gt; on Saturday with &lt;a href="https://www.strava.com/athletes/642263"&gt;Chris Danforth&lt;/a&gt; and &lt;a href="https://www.strava.com/athletes/3824994"&gt;Jarlath O'Neil-Dunne&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;Here's my &lt;a href="https://www.strava.com/activities/730863922"&gt;Strava data&lt;/a&gt;.
 The course was considerably more challenging (and interesting) than I'd expected- way more fun than running up the access road. There …&lt;/p&gt;</summary><content type="html">&lt;p&gt;After grabbing a couple hours of sleep, I had an awesome time running the &lt;a href="https://o2x.com/summit-challenge/"&gt;O2X Summit Challenge&lt;/a&gt; on Saturday with &lt;a href="https://www.strava.com/athletes/642263"&gt;Chris Danforth&lt;/a&gt; and &lt;a href="https://www.strava.com/athletes/3824994"&gt;Jarlath O'Neil-Dunne&lt;/a&gt;.&lt;/p&gt;
@@ -850,8 +1069,8 @@ The course was considerably more challenging (and interesting) than I'd expected
 The course was considerably more challenging (and interesting) than I'd expected- way more fun than running up the access road. There were ups, downs, lots of rough bushwhacking and even crawling through rocks, and up ladders!&lt;/p&gt;
 &lt;p&gt;Perhaps the most fun part was the actual &lt;em&gt;racing&lt;/em&gt; that happened during the race: usually a 5k or 10k is a time trial (you go out, and run your own pace regardless of the other people), but near the top I was actually racing for the finish with two others! Putting in an attack that was quickly shut down, catching 3rd place again, and then a sprint finish. Awesome. I have only really &lt;em&gt;raced&lt;/em&gt; one other time in a triathlon/running race that I can remember (going to the AG in a Shelburne Sprint Tri years ago), and it's an entirely different experience (bike racing, for example, is always a head to head race...but running is different for us average people most of the time).&lt;/p&gt;
 &lt;p&gt;I'll definitely be back!
-Check out the Strava effort above for photos, here is my favorite:
-&lt;img src="/images/2016-O2X-team.jpg" class="img-responsive"&gt;&lt;/p&gt;</content></entry><entry><title>A record that needs breaking</title><link href="/2016/09/29/a-record-that-needs-breaking/" rel="alternate"></link><published>2016-09-29T00:00:00+02:00</published><updated>2016-09-29T00:00:00+02:00</updated><author><name>andy reagan</name></author><id>tag:None,2016-09-29:/2016/09/29/a-record-that-needs-breaking/</id><summary type="html">&lt;p&gt;It's been about 5 years since I first stumbled across the Human Powered Land Speed [World] Record, and the competition for the record is certainly stiff.
+Check out the Strava effort above for photos, here is my favorite:&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2016-10-01-O2X/2016-O2X-team.jpg" class="img-responsive"&gt;&lt;/p&gt;</content></entry><entry><title>A record that needs breaking</title><link href="/2016/09/29/a-record-that-needs-breaking/" rel="alternate"></link><published>2016-09-29T00:00:00+02:00</published><updated>2016-09-29T00:00:00+02:00</updated><author><name>andy reagan</name></author><id>tag:None,2016-09-29:/2016/09/29/a-record-that-needs-breaking/</id><summary type="html">&lt;p&gt;It's been about 5 years since I first stumbled across the Human Powered Land Speed [World] Record, and the competition for the record is certainly stiff.
 It just got broken a &lt;a href="http://www.redbull.com/us/en/bike/stories/1331751185607/human-powered-speed-record-holder-interview"&gt;couple weeks ago&lt;/a&gt; with a run of 89MPH!!&lt;/p&gt;
 &lt;p&gt;Looking through the records, I had originally noticed that the tandem …&lt;/p&gt;</summary><content type="html">&lt;p&gt;It's been about 5 years since I first stumbled across the Human Powered Land Speed [World] Record, and the competition for the record is certainly stiff.
 It just got broken a &lt;a href="http://www.redbull.com/us/en/bike/stories/1331751185607/human-powered-speed-record-holder-interview"&gt;couple weeks ago&lt;/a&gt; with a run of 89MPH!!&lt;/p&gt;
@@ -1106,11 +1325,11 @@ The interviews of my advisors Peter Dodds and Chris Danforth have shown up in ea
 &lt;p&gt;In particular, the week before the article appeared in the NYT, I've been working hard to update the city and state rankings with the final 2014 numbers, and doing a one-off anaylsis of the NYT by section.
 With word vectors in hand from Jake Williams who parsed the NYT data with perl magic, I put together a showcase that ranks and compares the individual sections of the times.&lt;/p&gt;
 &lt;p&gt;Here's an image that links to full visualization:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://hedonometer.org/showcase/nyt/" target="_blank"&gt;&lt;img src="/images/2015-02-28-nyt-viz-screen.png" class="img-responsive"&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href="http://hedonometer.org/showcase/nyt/" target="_blank"&gt;&lt;img src="/images/2015-02-28-new-hedonometer-viz/2015-02-28-nyt-viz-screen.png" class="img-responsive"&gt;&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;Most recently, we learned this past Monday that John Tierney of the NYT was going to be interviewed on CBS This Morning and I spent most of the day putting together a comparsion of the anchors.
 They sent us the complete transcript of their show since the beginning of 2015, and I put all of the tools that I've built to use in making a speedy viz.
 This is online here, with the video of Tierney being intervied at the bottom:&lt;/p&gt;
-&lt;p&gt;&lt;a href="http://hedonometer.org/showcase/cbs/" target="_blank"&gt;&lt;img src="/images/2015-02-28-cbs-viz-screen.png" class="img-responsive"&gt;&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>Visualizing Neural Networks</title><link href="/2015/02/14/visualizing-neural-networks/" rel="alternate"></link><published>2015-02-14T00:00:00+01:00</published><updated>2015-02-14T00:00:00+01:00</updated><author><name>andy reagan</name></author><id>tag:None,2015-02-14:/2015/02/14/visualizing-neural-networks/</id><summary type="html">&lt;p&gt;This semester I'm taking Applied Artificial Neural Network with Professor Donna Rizzo, and I'm learning a lot about what the heck neural network are (and what they're good for).
+&lt;p&gt;&lt;a href="http://hedonometer.org/showcase/cbs/" target="_blank"&gt;&lt;img src="/images/2015-02-28-new-hedonometer-viz/2015-02-28-cbs-viz-screen.png" class="img-responsive"&gt;&lt;/a&gt;&lt;/p&gt;</content></entry><entry><title>Visualizing Neural Networks</title><link href="/2015/02/14/visualizing-neural-networks/" rel="alternate"></link><published>2015-02-14T00:00:00+01:00</published><updated>2015-02-14T00:00:00+01:00</updated><author><name>andy reagan</name></author><id>tag:None,2015-02-14:/2015/02/14/visualizing-neural-networks/</id><summary type="html">&lt;p&gt;This semester I'm taking Applied Artificial Neural Network with Professor Donna Rizzo, and I'm learning a lot about what the heck neural network are (and what they're good for).
 In addition to coding up the algorithms in MATLAB, we've been encouraged to explore what's going on to build our intiutions …&lt;/p&gt;</summary><content type="html">&lt;p&gt;This semester I'm taking Applied Artificial Neural Network with Professor Donna Rizzo, and I'm learning a lot about what the heck neural network are (and what they're good for).
 In addition to coding up the algorithms in MATLAB, we've been encouraged to explore what's going on to build our intiutions of the different approaches.
 So, after getting it to work in MATLAB, I coded a Bidirectional Associative Memory network in Javascript and used some d3 action to make a plot of the behavior.&lt;/p&gt;
@@ -1161,15 +1380,73 @@ First up: a sign for Sam and a proper trophy for the Storylab Strava leaderboard
 &lt;iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='http://www.strava.com/activities/207403252/embed/0fcc3758bfe2392e3d6ed082c0b16c6df9fd61a8'&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Leg 2:&lt;/p&gt;
-&lt;p&gt;&lt;img src="/images/odeexam.jpg" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2014-10-14-ode-run/odeexam.jpg" class="img-responsive"&gt;&lt;/p&gt;
 &lt;p&gt;Leg 3:&lt;/p&gt;
 &lt;iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='http://www.strava.com/activities/207403240/embed/a45e94e634501143eaab8154cc6feb6930c3e239'&gt;&lt;/iframe&gt;</summary><content type="html">&lt;p&gt;Leg 1:&lt;/p&gt;
 &lt;iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='http://www.strava.com/activities/207403252/embed/0fcc3758bfe2392e3d6ed082c0b16c6df9fd61a8'&gt;&lt;/iframe&gt;
 
 &lt;p&gt;Leg 2:&lt;/p&gt;
-&lt;p&gt;&lt;img src="/images/odeexam.jpg" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2014-10-14-ode-run/odeexam.jpg" class="img-responsive"&gt;&lt;/p&gt;
 &lt;p&gt;Leg 3:&lt;/p&gt;
-&lt;iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='http://www.strava.com/activities/207403240/embed/a45e94e634501143eaab8154cc6feb6930c3e239'&gt;&lt;/iframe&gt;</content></entry><entry><title>Django on Linode: My Deployment Strategy</title><link href="/2014/09/30/django-on-linode-my-deployment-strategy/" rel="alternate"></link><published>2014-09-30T00:00:00+02:00</published><updated>2014-10-06T00:00:00+02:00</updated><author><name>andy reagan</name></author><id>tag:None,2014-09-30:/2014/09/30/django-on-linode-my-deployment-strategy/</id><summary type="html">&lt;p&gt;Over the past six months, I definitely haven't figured out the best Django deployment strategy, but I've come a long way. The following is all set up on a &lt;a href="https://www.linode.com/"&gt;linode&lt;/a&gt; running Ubuntu 12.04.5 LTS.
+&lt;iframe height='405' width='590' frameborder='0' allowtransparency='true' scrolling='no' src='http://www.strava.com/activities/207403240/embed/a45e94e634501143eaab8154cc6feb6930c3e239'&gt;&lt;/iframe&gt;</content></entry><entry><title>Developing with hedonometer.org</title><link href="/2014/10/02/developing-with-hedonometerorg/" rel="alternate"></link><published>2014-10-02T00:00:00+02:00</published><updated>2014-10-02T00:00:00+02:00</updated><author><name>andy reagan</name></author><id>tag:None,2014-10-02:/2014/10/02/developing-with-hedonometerorg/</id><summary type="html">&lt;p&gt;~This is a draft.~&lt;/p&gt;
+&lt;p&gt;Edit: 2019-12-30 this &lt;em&gt;was&lt;/em&gt; a draft, I'm just going to publish it.&lt;/p&gt;
+&lt;p&gt;Long story short, you'll need to clone the git repository on bitbucket (if you don't have a bitbucket account let me know and I'll move it to github, they're the same kind of thing …&lt;/p&gt;</summary><content type="html">&lt;p&gt;~This is a draft.~&lt;/p&gt;
+&lt;p&gt;Edit: 2019-12-30 this &lt;em&gt;was&lt;/em&gt; a draft, I'm just going to publish it.&lt;/p&gt;
+&lt;p&gt;Long story short, you'll need to clone the git repository on bitbucket (if you don't have a bitbucket account let me know and I'll move it to github, they're the same kind of thing).
+Then you can add a remote that is the linode, (you ssh keys are already in all of the new user accounts on the linode under which the apps run), change the code, and then push to the linode.&lt;/p&gt;
+&lt;p&gt;For me editing the master branch (this is fine since you're just changing text) looks like:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;git pull origin master &lt;span class="c1"&gt;# update the local version&lt;/span&gt;
+&lt;span class="nb"&gt;source&lt;/span&gt; pyenv/bin/activate &lt;span class="c1"&gt;# initialize python virtual environment&lt;/span&gt;
+./manage.py runserver &lt;span class="m"&gt;54043&lt;/span&gt;
+&lt;span class="c1"&gt;# edit the code&lt;/span&gt;
+&lt;span class="c1"&gt;# all the changes are viewable at 127.0.0.1:54043&lt;/span&gt;
+C-c &lt;span class="c1"&gt;# to close the server&lt;/span&gt;
+git status &lt;span class="c1"&gt;# check what you changed&lt;/span&gt;
+git add newfile.html &lt;span class="c1"&gt;# add any new files&lt;/span&gt;
+git commit -am &lt;span class="s2"&gt;&amp;quot;simple commit&amp;quot;&lt;/span&gt; &lt;span class="c1"&gt;# commit all changes to watched files&lt;/span&gt;
+git push origin master &lt;span class="c1"&gt;# push to the bitbucket&lt;/span&gt;
+git push production master &lt;span class="c1"&gt;# push to the linode&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;The remote should look like:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;happy% git remote -v
+origin https://andrewreagan@bitbucket.org/andrewreagan/linode-backup.git &lt;span class="o"&gt;(&lt;/span&gt;fetch&lt;span class="o"&gt;)&lt;/span&gt;
+origin https://andrewreagan@bitbucket.org/andrewreagan/linode-backup.git &lt;span class="o"&gt;(&lt;/span&gt;push&lt;span class="o"&gt;)&lt;/span&gt;
+production prod@hedonometer.org:prod.git &lt;span class="o"&gt;(&lt;/span&gt;fetch&lt;span class="o"&gt;)&lt;/span&gt;
+production prod@hedonometer.org:prod.git &lt;span class="o"&gt;(&lt;/span&gt;push&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;test&lt;/span&gt; dev@hedonometer.org:dev.git &lt;span class="o"&gt;(&lt;/span&gt;fetch&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;span class="nb"&gt;test&lt;/span&gt; dev@hedonometer.org:dev.git &lt;span class="o"&gt;(&lt;/span&gt;push&lt;span class="o"&gt;)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Which is setup with &lt;code&gt;git remote add production prod@hedonometer.org:prod.git&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;The specific files that you'll want to edit are in &lt;code&gt;hedonometer/templates/hedonometer/*.html&lt;/code&gt;.
+Once you've cloned the repository, you can set up the virtual python environment using &lt;code&gt;virtualenv pyenv&lt;/code&gt;, installed from &lt;code&gt;brew install virtualenv&lt;/code&gt;. Then source the virtualenv, and use pip to install the following:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="n"&gt;Django&lt;/span&gt;&lt;span class="o"&gt;==&lt;/span&gt;&lt;span class="mf"&gt;1.6&lt;/span&gt;
+&lt;span class="n"&gt;South&lt;/span&gt;
+&lt;span class="n"&gt;django&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;tastypie&lt;/span&gt;
+&lt;span class="n"&gt;django&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;sekizai&lt;/span&gt;
+&lt;span class="n"&gt;MySQL&lt;/span&gt;&lt;span class="o"&gt;-&lt;/span&gt;&lt;span class="n"&gt;python&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Oh, also, for the site to run locally, you need a local mysql server and to put the connection settings into your environment. Getting the mysql server running (installed with &lt;code&gt;brew install mysql&lt;/code&gt;) was annoying at best, but then once you've got it running and created a database, my local environment settings are in a .env file in the repository:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;DJ_SECRET_KEY&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;******
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;DJ_DEBUG&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="m"&gt;1&lt;/span&gt;
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;DJ_DB_ENGINE&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;django.db.backends.mysql
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;DJ_DB_NAME&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;testdb
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;DJ_DB_USER&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;root
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;DJ_DB_PASSWORD&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;arret3
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;DJ_DB_HOST&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;DJ_DB_PORT&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;
+&lt;span class="nb"&gt;export&lt;/span&gt; &lt;span class="nv"&gt;DJ_STATIC_ROOT&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;/Users/andyreagan/work/2014/2014-09hedonometer/mysite/static
+&lt;span class="nb"&gt;alias&lt;/span&gt; &lt;span class="nv"&gt;minify&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;yuicompressor&amp;quot;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;So...wow that sounds a lot more complicated than I thought it would be.&lt;/p&gt;
+&lt;p&gt;A lot of the fuss is to get the site running locally, but as long as you don't need to see changes until they're on the site, you wouldn't need to get the site running locally...you could just clone the git repository, and push changes up the site.&lt;/p&gt;</content></entry><entry><title>Django on Linode: My Deployment Strategy</title><link href="/2014/09/30/django-on-linode-my-deployment-strategy/" rel="alternate"></link><published>2014-09-30T00:00:00+02:00</published><updated>2014-10-06T00:00:00+02:00</updated><author><name>andy reagan</name></author><id>tag:None,2014-09-30:/2014/09/30/django-on-linode-my-deployment-strategy/</id><summary type="html">&lt;p&gt;Over the past six months, I definitely haven't figured out the best Django deployment strategy, but I've come a long way. The following is all set up on a &lt;a href="https://www.linode.com/"&gt;linode&lt;/a&gt; running Ubuntu 12.04.5 LTS.
 There are a few key considerations to the setup of hedonometer.org:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;We're using …&lt;/li&gt;&lt;/ol&gt;</summary><content type="html">&lt;p&gt;Over the past six months, I definitely haven't figured out the best Django deployment strategy, but I've come a long way. The following is all set up on a &lt;a href="https://www.linode.com/"&gt;linode&lt;/a&gt; running Ubuntu 12.04.5 LTS.
