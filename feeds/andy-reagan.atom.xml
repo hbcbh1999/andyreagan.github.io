@@ -1,5 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom"><title>andy reagan - Andy Reagan</title><link href="/" rel="alternate"></link><link href="/feeds/andy-reagan.atom.xml" rel="self"></link><id>/</id><updated>2019-11-01T00:00:00+01:00</updated><entry><title>2019 NYC Marathon</title><link href="/2019/11/01/2019-nyc-marathon/" rel="alternate"></link><published>2019-11-01T00:00:00+01:00</published><updated>2019-11-01T00:00:00+01:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-11-01:/2019/11/01/2019-nyc-marathon/</id><summary type="html">&lt;p&gt;Long story stort:
+<feed xmlns="http://www.w3.org/2005/Atom"><title>andy reagan - Andy Reagan</title><link href="/" rel="alternate"></link><link href="/feeds/andy-reagan.atom.xml" rel="self"></link><id>/</id><updated>2019-12-30T00:00:00+01:00</updated><entry><title>Analyzing Strava metadata</title><link href="/2019/12/30/analyzing-strava-metadata/" rel="alternate"></link><published>2019-12-30T00:00:00+01:00</published><updated>2019-12-30T00:00:00+01:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-12-30:/2019/12/30/analyzing-strava-metadata/</id><summary type="html">&lt;p&gt;I love running,
+and I love stroller running with my son even more.
+Strava is my go-to fitness app and I've tagged all of my stroller runs
+with a searchable tag so I can count the miles we've logged together,
+mostly while he has slept!&lt;/p&gt;
+&lt;p&gt;The search functionality on Strava's …&lt;/p&gt;</summary><content type="html">&lt;p&gt;I love running,
+and I love stroller running with my son even more.
+Strava is my go-to fitness app and I've tagged all of my stroller runs
+with a searchable tag so I can count the miles we've logged together,
+mostly while he has slept!&lt;/p&gt;
+&lt;p&gt;The search functionality on Strava's site doesn't provide summaries like total miles,
+but I can search my own data easily using Python.&lt;/p&gt;
+&lt;h2&gt;Request your archive&lt;/h2&gt;
+&lt;p&gt;Go to your settings:&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-12-30-strava-metadata/step-01.png" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;Account page:&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-12-30-strava-metadata/step-02.png" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;Click the download button:&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-12-30-strava-metadata/step-03.png" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;Click this button:&lt;/p&gt;
+&lt;p&gt;&lt;img src="/images/2019-12-30-strava-metadata/step-04.png" class="img-responsive"&gt;&lt;/p&gt;
+&lt;p&gt;Then you'll get an email with a link to your data.&lt;/p&gt;
+&lt;h2&gt;Load up your data.&lt;/h2&gt;
+&lt;p&gt;This part is simple,
+and to make things even easier I'll use Pandas.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;pandas&lt;/span&gt; &lt;span class="kn"&gt;as&lt;/span&gt; &lt;span class="nn"&gt;pd&lt;/span&gt;
+&lt;span class="n"&gt;df&lt;/span&gt; &lt;span class="o"&gt;=&lt;/span&gt; &lt;span class="n"&gt;pd&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;read_csv&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s2"&gt;&amp;quot;activities.csv&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;
+&lt;span class="n"&gt;df&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;head&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Then we can pull out all of the activies with type Run,
+that contain the stroller tag, and sum up the miles all like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;run = df[&amp;quot;Activity Type&amp;quot;].str.contains(&amp;quot;Run&amp;quot;)
+stroller = df[&amp;quot;Activity Name&amp;quot;].str.contains(&amp;quot;#stroller&amp;quot;)
+miles = (df
+    .loc[run &amp;amp; stroller, :]  # filter
+    .loc[:, &amp;#39;Distance&amp;#39;]  # select
+    .astype(&amp;#39;float&amp;#39;)  # convert dtype
+    .sum()/1.609  # sum and convert to miles
+)
+miles
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;Let's break that down: first, we select out two filters (type Run and stroller in the title),
+then we convert the distance field to a float,
+then we sum it up.
+The last step converts km into miles.
+I had actually first written it in one line,
+as below,
+but thought the above would be clearer.&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;df.loc[df[&amp;quot;Activity Type&amp;quot;].str.contains(&amp;quot;Run&amp;quot;) &amp;amp; df[&amp;quot;Activity Name&amp;quot;].str.contains(&amp;quot;#stroller&amp;quot;), :].Distance.astype(&amp;#39;float&amp;#39;).sum()/1.609
+&lt;/pre&gt;&lt;/div&gt;
+
+
+&lt;p&gt;All told, by the end of 2019 I'll have logged 857 miles with my little man.&lt;/p&gt;</content></entry><entry><title>2019 NYC Marathon</title><link href="/2019/11/01/2019-nyc-marathon/" rel="alternate"></link><published>2019-11-01T00:00:00+01:00</published><updated>2019-11-01T00:00:00+01:00</updated><author><name>Andy Reagan</name></author><id>tag:None,2019-11-01:/2019/11/01/2019-nyc-marathon/</id><summary type="html">&lt;p&gt;Long story stort:
 I didn't run.&lt;/p&gt;
 &lt;p&gt;In the spirit of sharing both successes and failures,
 I overcommitted personally
