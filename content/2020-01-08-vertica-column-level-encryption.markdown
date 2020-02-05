@@ -3,10 +3,10 @@ Author: Andy Reagan
 Date: 2020-01-08
 
 Vertica is a very powerful analytics database,
-and security is very important to us at MassMutual.
-There are cases where we need to store sensitive data,
+and security is important!
+You might need to store sensitive data,
 like SSN,
-but we don't want the SSNs available to anyone who can see the table in Vertica.
+but you don't want the SSNs available to anyone who can see the table on the database.
 To provide an additional layer of security,
 we can encrypt the SSN itself and store the encrypted data.
 
