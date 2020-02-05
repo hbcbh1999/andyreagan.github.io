@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0"><channel><title>andy reagan - Andy Reagan</title><link>/</link><description></description><lastBuildDate>Wed, 08 Jan 2020 00:00:00 +0100</lastBuildDate><item><title>Column level encryption on a Vertica Database</title><link>/2020/01/08/column-level-encryption-on-a-vertica-database/</link><description>&lt;p&gt;Vertica is a very powerful analytics database,
-and security is very important to us at MassMutual.
-There are cases where we need to store sensitive data,
+and security is important!
+You might need to store sensitive data,
 like SSN,
-but we don't want the SSNs available to anyone who can see the table in Vertica.
-To provide an additional layer of …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andy Reagan</dc:creator><pubDate>Wed, 08 Jan 2020 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:None,2020-01-08:/2020/01/08/column-level-encryption-on-a-vertica-database/</guid></item><item><title>Analyzing Strava metadata</title><link>/2019/12/30/analyzing-strava-metadata/</link><description>&lt;p&gt;I love running,
+but you don't want the SSNs available to anyone who can see the table on the database.
+To provide an additional layer of security,
+we can encrypt the SSN itself …&lt;/p&gt;</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Andy Reagan</dc:creator><pubDate>Wed, 08 Jan 2020 00:00:00 +0100</pubDate><guid isPermaLink="false">tag:None,2020-01-08:/2020/01/08/column-level-encryption-on-a-vertica-database/</guid></item><item><title>Analyzing Strava metadata</title><link>/2019/12/30/analyzing-strava-metadata/</link><description>&lt;p&gt;I love running,
 and I love stroller running with my son even more.
 Strava is my go-to fitness app and I've tagged all of my stroller runs
 with a searchable tag so I can count the miles we've logged together,
